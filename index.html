@@ -1,0 +1,1954 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="35週的日常生活中的神操：聖依納爵神操、聖經默想、AI短視頻靈修總覽。" />
+  <title>35週的日常生活中的神操｜Spiritual Exercises in Daily Life</title>
+  <style>
+    :root {
+      --bg: #fbf9f4;
+      --card: #ffffff;
+      --ink: #26332d;
+      --muted: #6c756f;
+      --line: #e6dfd1;
+      --gold: #9a6b25;
+      --gold-soft: #f4ead7;
+      --green: #3f5d4c;
+      --shadow: 0 8px 28px rgba(38, 51, 45, .08);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #f7f1e5 0, var(--bg) 280px);
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.75;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 64px 0 30px; text-align: center; }
+    .top-nav {
+      display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-bottom:18px;
+    }
+    .top-nav a {
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:9px 16px; border:1px solid #d8c7a6; border-radius:999px;
+      background:rgba(255,255,255,.78); color:var(--green);
+      font-weight:700; box-shadow:0 4px 14px rgba(38,51,45,.06);
+      text-decoration:none;
+    }
+    .top-nav a:hover {
+      background:#fffaf0; border-color:#bda67d; text-decoration:none;
+    }
+    .eyebrow {
+      display: inline-block; padding: 6px 12px; border: 1px solid #d8c7a6;
+      border-radius: 999px; color: var(--gold); background: rgba(255,255,255,.55);
+      font-size: .86rem; letter-spacing: .08em;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.2; margin: 18px 0 10px; color: #2d4739; }
+    .subtitle { color: var(--gold); font-size: clamp(1rem, 2vw, 1.22rem); margin: 0 0 24px; }
+    .intro {
+      max-width: 850px; margin: 0 auto; background: rgba(255,255,255,.78);
+      border: 1px solid var(--line); padding: 24px 28px; border-radius: var(--radius); box-shadow: var(--shadow);
+      text-align: left;
+    }
+    .intro strong { color: var(--green); }
+    .amdg { text-align:center; margin-top: 14px; color: var(--gold); font-weight: 700; letter-spacing: .08em; }
+    .toolbar {
+      position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px);
+      background: rgba(251,249,244,.92); border-bottom: 1px solid var(--line);
+      padding: 12px 0; margin-top: 24px;
+    }
+    .toolbar-inner { display: grid; grid-template-columns: 1fr 180px auto auto; gap: 10px; align-items: center; }
+    input, select, button {
+      font: inherit; border: 1px solid #d8d3c7; background: white; color: var(--ink);
+      border-radius: 12px; padding: 10px 12px;
+    }
+    button { cursor: pointer; color: var(--green); }
+    button:hover { border-color: #bda67d; background: #fffaf0; }
+    main { padding: 28px 0 72px; }
+    .stats { display:flex; gap: 10px; flex-wrap:wrap; margin-bottom:18px; color:var(--muted); font-size:.92rem; }
+    .chip { background:#fff; border:1px solid var(--line); border-radius:999px; padding:5px 10px; }
+    details.week {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: var(--shadow); margin: 0 0 16px; overflow: hidden;
+    }
+    summary {
+      list-style: none; cursor: pointer; padding: 20px 24px;
+      display:flex; gap:16px; align-items:center; justify-content:space-between;
+    }
+    summary::-webkit-details-marker { display:none; }
+    .week-left { display:flex; gap:14px; align-items:center; min-width:0; }
+    .week-no {
+      min-width: 74px; height: 48px; border-radius: 14px; display:grid; place-items:center;
+      background: var(--gold-soft); color: var(--gold); font-weight: 800;
+    }
+    .week-title { font-size: 1.18rem; font-weight: 800; color: var(--green); }
+    .week-meta { color: var(--muted); font-size: .88rem; }
+    .chev { color:#9a8f7d; font-size:1.2rem; transition:.2s; }
+    details[open] .chev { transform: rotate(180deg); }
+    .table-wrap { overflow-x:auto; border-top:1px solid var(--line); }
+    table { border-collapse: collapse; width:100%; min-width: 780px; }
+    th, td { padding: 14px 16px; text-align:left; vertical-align:top; border-bottom:1px solid #eee9df; }
+    th { background:#fcfaf5; color:#6b5b42; font-size:.88rem; letter-spacing:.04em; }
+    tbody tr:last-child td { border-bottom:0; }
+    tbody tr:hover { background:#fffdf8; }
+    td.day { width:88px; color:var(--gold); font-weight:800; white-space:nowrap; }
+    td.title { width:34%; font-weight:700; color:#304a3d; }
+    td.source { width:36%; color:#4d5751; }
+    td.yt { width:160px; }
+    .youtube {
+      display:inline-flex; align-items:center; gap:6px; padding:5px 9px; border:1px solid #decbb0;
+      border-radius:999px; background:#fffaf2; font-size:.88rem; font-weight:700;
+    }
+    .pending { color:#aaa197; font-style:italic; font-weight:400; }
+    .data-note {
+      margin: 28px 0 0; padding: 18px 20px; border-left: 4px solid #ceb27d;
+      background: #fffaf0; border-radius: 0 12px 12px 0; color:#675d50; font-size:.92rem;
+    }
+    footer { padding: 28px 0 48px; text-align:center; color:var(--muted); border-top:1px solid var(--line); }
+    footer strong { color:var(--gold); }
+    .hidden { display:none !important; }
+    @media (max-width: 760px) {
+      .wrap { width:min(100% - 20px, 1180px); }
+      header { padding-top:42px; }
+      .intro { padding:20px; }
+      .toolbar-inner { grid-template-columns:1fr 110px; }
+      .toolbar-inner button { display:none; }
+      summary { padding:16px; }
+      .week-no { min-width:62px; height:44px; }
+      .week-title { font-size:1.03rem; }
+    }
+    @media print {
+      .toolbar { display:none; }
+      details.week { break-inside:avoid; box-shadow:none; }
+      details.week:not([open]) > .table-wrap { display:block; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav class="top-nav" aria-label="主要導覽">
+      <a href="https://www.hyloveclub.com" target="_blank" rel="noopener">Home</a>
+      <a href="#series-intro">系列說明</a>
+    </nav>
+    <div class="eyebrow">IGNATIAN SPIRITUALITY · DAILY LIFE</div>
+    <h1>35週的日常生活中的神操</h1>
+    <p class="subtitle">Spiritual Exercises in Daily Life · 35 Weeks</p>
+    <section class="intro" id="series-intro">
+      <strong>系列說明</strong><br>
+      《35週的日常生活中的神操》以聖依納爵《神操》為靈修基礎，結合聖經默想、祈禱、省察與生活實踐，透過35週循序漸進的每日主題，陪伴現代人在日常生活中尋求並找到天主。這個 AI 靈修短視頻系列歷時約一年半，從天主臨在、反省與悔改、耶穌的童年與公開生活、天國的訊息、使命與召叫、受難與復活，到「獲得愛情的默觀」，最後回到每天的祈禱與生活，以愛回應天主，並在一切事情上實行「愈顯主榮」。
+      <div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem;">
+        <strong style="color:var(--green);">主要依據：</strong>《日常生活中的神操》（第一冊至第三冊），穆志宏、朱修德合著，台北市：上智，1998。<br>
+        <strong style="color:var(--green);">AI 靈修短視頻：</strong>由 Dr. Maria R. Lee 製作，耶穌孝女會 Sr. Teresita Chi 指導。<br>
+</div>
+      <div class="amdg">AMDG｜愈顯主榮</div>
+    </section>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="wrap toolbar-inner">
+    <input id="search" type="search" placeholder="搜尋：主題、經文、神操編號…" aria-label="搜尋" />
+    <select id="weekFilter" aria-label="選擇週次">
+      <option value="">全部週次</option>
+    </select>
+    <button id="openAll" type="button">全部展開</button>
+    <button id="closeAll" type="button">全部收合</button>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="stats" id="stats"></div>
+  <div id="weeks"></div>
+  <div class="data-note">
+    <strong>資料說明：</strong>
+    本頁的「每日標題」與「來源」依目前可確認的歷史紀錄整理；無法可靠復原的欄位標示為「資料待補」，不以推測補寫。
+    YouTube 欄位目前以 <strong>St. Ignatius AI + Week/Day</strong> 的精確 YouTube 搜尋連結呈現；沒有可確認標題的 Day 維持空白。若日後取得個別影片的直接網址，可直接以該網址取代對應的 <code>youtube</code> 欄位。上方「本週主題摘要」為方便閱讀而作的內容歸納。
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    35週《日常生活中的神操》 · AI短視頻靈修<br>
+    <strong>在一切事情上尋求並找到天主 · 愈顯主榮</strong>
+  </div>
+</footer>
+
+<script>
+const weeksData = [
+  {
+    "week": 1,
+    "summary": "天主臨在、渴慕與相遇",
+    "days": [
+      {
+        "day": 1,
+        "title": "天主臨在",
+        "source": "聖詠 139",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "渴慕天主",
+        "source": "聖詠 42、63",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "以天主的觀點渴慕天主",
+        "source": "出谷紀 33:12–23",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "蒙召經驗基督",
+        "source": "若望福音 1:35–41",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "獲得經驗的條件",
+        "source": "聆聽：撒慕爾紀上 3:1–12；慷慨：宗徒大事錄 22:6–11；接受：路加福音 1:26–38",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "與主相遇",
+        "source": "若望福音 4:4–42",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 2,
+    "summary": "反省、棄絕與慷慨跟隨",
+    "days": [
+      {
+        "day": 1,
+        "title": "反省和棄絕",
+        "source": "路加福音 14:25–33",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "反省和棄絕",
+        "source": "若望福音 12:20–36",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "神操的本質",
+        "source": "瑪竇福音 10:39、16:25；馬爾谷福音 8:35；路加福音 9:24、17:33",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "神操的本質（2）",
+        "source": "迦拉達書 2:20",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "不急躁",
+        "source": "路加福音 8:5–15",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "慷慨的精神",
+        "source": "路加福音 9:57–62",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 3,
+    "summary": "祈禱、自由與信賴",
+    "days": [
+      {
+        "day": 1,
+        "title": "過程中的時間",
+        "source": "《神操》76；路加福音 21:19",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "隨意措置取用",
+        "source": "戶籍紀 11:26–30；若望福音 3:22–30；希伯來書 10:4–10",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "持續祈禱",
+        "source": "《神操》12、13、15 凡例",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "再談祈禱",
+        "source": "瑪竇福音 6:5–15；出谷紀 3:1–2",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "續談祈禱",
+        "source": "路加福音 10:9–13；羅馬書 8:26–27；箴言 7:3；聖詠 119",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "謙遜的信賴",
+        "source": "瑪竇福音 18:1–4",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習第1–6天",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 4,
+    "summary": "天主的愛與人的徬徨",
+    "days": [
+      {
+        "day": 1,
+        "title": "你愛一切所有，不恨你所造的",
+        "source": "智慧篇 11:25",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "人的徬徨處境",
+        "source": "若望壹書 4:7–12",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "我在你的門口敲門",
+        "source": "默示錄 3:20",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 5,
+    "summary": "按天主肖像受造與管理責任",
+    "days": [
+      {
+        "day": 1,
+        "title": "天主按照祂的肖像和模樣造了人",
+        "source": "創世紀 1:26",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "人子算什麼，你竟對他眷顧周詳",
+        "source": "聖詠 8:5",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "基督耶穌，新受造的人",
+        "source": "哥羅森書 1:22–23",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "我們是天主奧秘的管理人",
+        "source": "格林多前書 3:5–23",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "管理人責任就是做忠信的人",
+        "source": "瑪竇福音 25:14–30",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "基督徒的負責態度",
+        "source": "格林多後書 6:3–13",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 6,
+    "summary": "受造目的、自由與奉獻",
+    "days": [
+      {
+        "day": 1,
+        "title": "一切皆為達成受造之目的",
+        "source": "《神操》23",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "人用事物，或多或少，全看它們是否襄助他",
+        "source": "《神操》23",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "主觀的條件",
+        "source": "《神操》23；伯多祿後書 1:3–10",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "神修的中立、平衡與自由",
+        "source": "若望福音 3:25–36",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "精神和肉身的敵對",
+        "source": "迦拉達書 5:13–26",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "更高的精神：慷慨的自我奉獻",
+        "source": "瑪竇福音 13:44–46",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "啟示與反省——依納爵神操綜整",
+        "source": "若望福音 8:31–32",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 7,
+    "summary": "面對罪與接受寬恕",
+    "days": [
+      {
+        "day": 1,
+        "title": "我也不定你的罪，從今以後，不要再犯罪了",
+        "source": "若望福音 8:2–11",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "如果我們說我們沒有犯罪，就是欺騙自己",
+        "source": "若望壹書 1:5–2:2",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "主，請你離開我，因我是罪人",
+        "source": "路加福音 5:1–11",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "來，讓我們趁年輕享受美麗吧",
+        "source": "智慧篇 2:1–24",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "誰能救我脫離這該死的肉身？",
+        "source": "羅馬書 7:14–25",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "我們都在上主前犯了罪，這恥辱是我們應得的",
+        "source": "巴路克 1:15",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習與反省",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "summary": "罪惡的歷史",
+    "days": [
+      {
+        "day": 1,
+        "title": "罪惡的歷史：撒殫的罪惡",
+        "source": "若望福音 8:39–47",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "罪惡的歷史：原罪",
+        "source": "創世紀 3",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "罪惡的歷史：原罪",
+        "source": "創世紀 1–11",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "罪惡的歷史：世界和人類的罪惡",
+        "source": "羅馬書 1:18–3:20",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "罪惡的歷史：世界和人類的罪惡",
+        "source": "羅馬書 1:18–3:20",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "罪惡的歷史及其在三方面平行的發展",
+        "source": "路加福音 1:26、1:38",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "罪惡是什麼？罪惡的歷史",
+        "source": "創世紀 3；創世紀 4–11；羅馬書 5:20；瑪竇福音 9:2",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 9,
+    "summary": "個人罪惡、愛與悔改",
+    "days": [
+      {
+        "day": 1,
+        "title": "你就是那個人",
+        "source": "撒慕爾紀下 11–12:14",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "反省自己的罪惡",
+        "source": "約伯傳 42:6",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "愛的歷史",
+        "source": "厄則克耳先知書 16",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "愛的歷史（續）",
+        "source": "厄則克耳先知書 16:60–63",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "唯獨得罪了你",
+        "source": "聖詠 51",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "那裡將有哀號和切齒",
+        "source": "瑪竇福音 16:25",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習與反省：我有哪些不易悔改的罪？我該如何面對與回應？",
+        "source": "羅馬書 7:24–25；若望壹書 1:9；耶肋米亞 17:9；格林多後書 12:9；箴言 24:16；瑪竇福音 26:41；岳厄爾 2:12–13；斐理伯書 4:4；聖詠 19:13",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 10,
+    "summary": "罪的根源與內在分裂",
+    "days": [
+      {
+        "day": 1,
+        "title": "從人心裡出來的，是什麼？",
+        "source": "馬爾谷福音 7:21–23；配合聖詠 130",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "她的許多罪得了赦免，因為她愛得多",
+        "source": "路加福音 7:36–50",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "內在的分裂",
+        "source": "羅馬書 7:14–25",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "山中聖訓的對比",
+        "source": "瑪竇福音 5:21–48",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "反省我的違情悖理",
+        "source": "瑪竇福音 7:21–27、21:18–19",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "罪惡的根由",
+        "source": "雅各伯書 4:1–10",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習省察自己的軟弱及惡的傾向",
+        "source": "格林多前書 10:12；格林多後書 12:9；聖詠 132:8（另含雅 3:2、瑪 26:41 等）",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 11,
+    "summary": "面對世界、死亡與恩寵",
+    "days": [
+      {
+        "day": 1,
+        "title": "面對世界",
+        "source": "若望福音 2:15–16",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "死亡的奧秘：規定人只死一次",
+        "source": "希伯來書 9:27",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "罪惡藉著一人進入了世界，死亡藉著罪惡也進入了世界",
+        "source": "羅馬書 5:12–21",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 12,
+    "summary": "悔改、仁慈與新的召叫",
+    "days": [
+      {
+        "day": 1,
+        "title": "聖經中的悔改者",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "聖經中罪人的祈禱",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "天主面對罪惡的行動",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "耶穌的仁慈解放罪人",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "耶穌的仁慈寬恕人——受到寬恕的喜樂",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "保祿的悔改",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "主，你要我做什麼？",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 13,
+    "summary": "信賴、召叫與奉獻",
+    "days": [
+      {
+        "day": 1,
+        "title": "我知道我信賴的是誰",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "耶穌召叫你為天國貢獻的意義",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "主，祢住在哪裡",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "你們能飲我要飲的爵嗎",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "萬物的永生主宰",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "上主是我的牧者，我一無所缺",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "默想對耶穌奉獻的意義",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 14,
+    "summary": "降生奧蹟與瑪利亞",
+    "days": [
+      {
+        "day": 1,
+        "title": "降生奧蹟",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "耶穌聖誕",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "瑪利亞－天國之門（1）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "瑪利亞－天國之門（2）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "瑪利亞－天國之門（3）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "運用五官默觀",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "感動的奧蹟",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 15,
+    "summary": "耶穌童年：若瑟、賢士與聖家",
+    "days": [
+      {
+        "day": 1,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "若瑟領報",
+        "source": "瑪竇福音 1:18–25",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "賢士朝拜耶穌",
+        "source": "瑪竇福音 2:1–13",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "聖家逃往埃及",
+        "source": "瑪竇福音 2:13–15",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "無罪嬰孩遭屠殺",
+        "source": "瑪竇福音 2:12–18",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "聖家回納匝肋",
+        "source": "瑪竇福音 2:19–23",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 16,
+    "summary": "路加福音中的耶穌童年奧蹟",
+    "days": [
+      {
+        "day": 1,
+        "title": "路加福音中的兩項宣報",
+        "source": "路加福音 1:15–38",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "路加福音中的誕生",
+        "source": "路加福音 1:57–66、80；2:1–20",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "路加福音中的讚美詩",
+        "source": "路加福音 1:46–55、67–79；2:28–32",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "聖殿內的事件（1）",
+        "source": "路加福音 2:21–38",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "聖殿內的事件（2）",
+        "source": "路加福音 2:41–50",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "耶穌的隱居生活",
+        "source": "路加福音 2:39–40、51–52",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "複習前六天",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 17,
+    "summary": "兩旗、誘惑與基督的方法",
+    "days": [
+      {
+        "day": 1,
+        "title": "撒種的比喻",
+        "source": "馬爾谷福音 4:1–20",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "兩旗默想",
+        "source": "《神操》136–147",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "複習兩旗默想",
+        "source": "瑪竇福音 16:25",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "普遍的誘惑",
+        "source": "瑪竇福音 4:1–11",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "基督的方法",
+        "source": "瑪竇福音 3:13–17",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "綜合：聖經的鳥瞰",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "停、看、聽",
+        "source": "格林多後書 4",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 18,
+    "summary": "選擇、分辨與真正的愛",
+    "days": [
+      {
+        "day": 1,
+        "title": "瞻前顧後",
+        "source": "瑪竇福音 3:13–4:13",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "面對一個例子來反省",
+        "source": "《神操》149–157",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "聖經中的例子（1）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "聖經中的例子（2）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "真正的愛（1）",
+        "source": "《神操》164–168",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "真正的愛（2）",
+        "source": "路加福音 16:10",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "停．看．聽",
+        "source": "斐理伯書 3",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 19,
+    "summary": "天國的訊息：山中聖訓",
+    "days": [
+      {
+        "day": 1,
+        "title": "默想往昔（1）",
+        "source": "聖詠 23",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "默想往昔（2）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "天國的訊息，山中聖訓（1）",
+        "source": "瑪竇福音 5:1–28",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "天國的訊息，山中聖訓（2）：新正義",
+        "source": "瑪竇福音 5:17–48",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "天國的訊息，山中聖訓（3）：愛",
+        "source": "瑪竇福音 6:1–7:12",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "天國的訊息，山中聖訓（4）：選擇真理",
+        "source": "瑪竇福音 7:13–23",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "天國的訊息，山中聖訓（5）：結論",
+        "source": "瑪竇福音 7:24–28",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 20,
+    "summary": "天國的行動與門徒生活",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌擔負了我們的軟弱",
+        "source": "瑪竇福音 8:1–17",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "邀請來追隨耶穌",
+        "source": "瑪竇福音 8:18–22",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "耶穌有征服邪惡的能力",
+        "source": "瑪竇福音 8:23–9:8",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "耶穌有轉變人的能力",
+        "source": "瑪竇福音 9:9–17",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "耶穌是門徒的新生活",
+        "source": "瑪竇福音 9:18–34",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "耶穌是天國的記號",
+        "source": "瑪竇福音 9:35–38",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "天國的計畫",
+        "source": "瑪竇福音 8–9",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 21,
+    "summary": "若望福音中的耶穌記號",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌是新時代的開始",
+        "source": "若望福音 2:1–11",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "耶穌是信仰的開始，這信仰帶給人新的生命",
+        "source": "若望福音 4:43–54",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "耶穌把我們從癱瘓中釋放出來",
+        "source": "若望福音 5:1–18、19–47",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "耶穌是我們生命的食糧",
+        "source": "若望福音 6:1–15",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "耶穌是我們生活中天主的能力",
+        "source": "若望福音 6:16–21、22–71",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "耶穌是世界之光",
+        "source": "若望福音 9:1–41",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "耶穌是我們的生命和復活",
+        "source": "若望福音 11:1–57",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 22,
+    "summary": "使命、召叫與福音的執事",
+    "days": [
+      {
+        "day": 1,
+        "title": "莊稼多",
+        "source": "瑪竇福音 9:35–38",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "使徒性責任的召叫",
+        "source": "若望福音 4:31–38",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "使命（1）：揀選",
+        "source": "瑪竇福音 10:1–5",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "使命（2）",
+        "source": "瑪竇福音 10:5–42",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "善牧",
+        "source": "若望福音 9:40–10:21",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "福音的執事",
+        "source": "格林多後書 3–6",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "Week 22 複習",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 23,
+    "summary": "資料待補",
+    "days": [
+      {
+        "day": 1,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 24,
+    "summary": "宗徒蒙召與天國團體",
+    "days": [
+      {
+        "day": 1,
+        "title": "宗徒們的蒙召",
+        "source": "《神操》275",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "伯多祿的蒙召",
+        "source": "路加福音 5:1–11",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "面對基督奧蹟的記號",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "天國的團體（1）",
+        "source": "瑪竇福音 15:32–39",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "天國的團體（2）",
+        "source": "瑪竇福音 17–18",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "天國的團體（3）",
+        "source": "羅馬書 12",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 25,
+    "summary": "在耶路撒冷的最後幾天",
+    "days": [
+      {
+        "day": 1,
+        "title": "在耶路撒冷的最後幾天（1）",
+        "source": "若望福音 12",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "在耶路撒冷的最後幾天（2）",
+        "source": "若望福音 12",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "在耶路撒冷的最後幾天（3）",
+        "source": "若望福音 12 後段",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "在耶路撒冷的最後幾天（4）",
+        "source": "瑪竇福音 21–22",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "在耶路撒冷的最後幾天（5）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "在耶路撒冷的最後幾天（6）",
+        "source": "瑪竇福音 23",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "在耶路撒冷的最後幾天——複習",
+        "source": "複習若望福音 12；瑪竇福音 21–23",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 26,
+    "summary": "最後晚餐、聖體與臨別贈言",
+    "days": [
+      {
+        "day": 1,
+        "title": "基督以何出發點來過祂的苦難",
+        "source": "若望福音 13:1–5",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "耶穌給門徒們洗腳",
+        "source": "若望福音 13:1–20",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "基督聖體（1）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "基督聖體（2）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "耶穌的臨別贈言",
+        "source": "若望福音 13–17",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "耶穌的臨別贈言（二）",
+        "source": "若望福音 14–16",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習 Week 26",
+        "source": "若望福音 13–17",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 27,
+    "summary": "苦悶的山園祈禱",
+    "days": [
+      {
+        "day": 1,
+        "title": "苦悶的山園祈禱（一）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "苦悶的山園祈禱（二）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "苦悶的山園祈禱（三）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "苦悶的山園祈禱（四）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "苦悶的山園祈禱（五）",
+        "source": "",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "苦悶的山園祈禱（六）",
+        "source": "馬爾谷福音 14:50",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習 Week 27 Day 1–Day 6",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 28,
+    "summary": "被捕、受審與苦路",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌被捕",
+        "source": "瑪竇福音 26:47–56",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "耶穌在公議會受審",
+        "source": "瑪竇福音 26:57–68；27:1–2",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "伯多祿否認耶穌",
+        "source": "馬爾谷福音 14:66–72",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "耶穌在比拉多前受審",
+        "source": "馬爾谷福音 15:1–20",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "耶穌在黑落德前受審",
+        "source": "路加福音 23:6–12",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "苦路與耶穌被釘在十字架上",
+        "source": "馬爾谷福音 15:20–32",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習：拜苦路，在耶穌的痛苦中陪伴祂",
+        "source": "複習 Day 1–6",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 29,
+    "summary": "十字架上的七句話",
+    "days": [
+      {
+        "day": 1,
+        "title": "臨終贈言第一句：寬恕的愛",
+        "source": "路加福音 23:34",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "今天與主同在樂園",
+        "source": "路加福音 23:43",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "在十字架下成為新的家人",
+        "source": "若望福音 19:25–27",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "在黑暗中仍呼喚天主",
+        "source": "馬爾谷福音 15:33–36",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "我渴",
+        "source": "若望福音 19:28–29",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "完成了",
+        "source": "若望福音 19:30",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "把生命交託在父手中",
+        "source": "路加福音 23:45–46",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 30,
+    "summary": "十字架、安葬與守候復活",
+    "days": [
+      {
+        "day": 1,
+        "title": "以十字架的瞭望台為出發點",
+        "source": "《神操》208–209",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "奧蹟的意義",
+        "source": "斐理伯書 2:5–11；格林多前書 1:18–31；希伯來書 5:1–10、10:5–10",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "面對我的苦像",
+        "source": "哥羅森書 1:24",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "耶穌被刺透的心",
+        "source": "若望福音 19:31–37",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "安葬：在沉默與封石中守候",
+        "source": "若望福音 19:38–42；瑪竇福音 27:57–61；馬爾谷福音 15:42–47；路加福音 23:50–56",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "瑪利亞等待耶穌復活時的孤獨與寂寞",
+        "source": "《神操》93（另參復活默觀 218–225、299）",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習：站在十字架前，回顧主的愛與我的回應",
+        "source": "《神操》53",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 31,
+    "summary": "復活的主顯現與同行",
+    "days": [
+      {
+        "day": 1,
+        "title": "真情地參與耶穌的復活：耶穌顯現給婦女",
+        "source": "瑪竇福音 28:1–10",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "尋求主基督復活的訊號",
+        "source": "若望福音 20:1–10",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "瑪達肋納漸漸認出耶穌",
+        "source": "若望福音 20:11–18",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "耶穌顯現給厄瑪烏的門徒（1）",
+        "source": "路加福音 24:13–35",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "耶穌顯現給厄瑪烏的門徒（2）",
+        "source": "若望福音 14:23；宗徒大事錄 2:42",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "你們為什麼恐惶？……是我自己",
+        "source": "路加福音 24:36–47",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習：從空墳墓到升天祝福",
+        "source": "路加福音 24",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 32,
+    "summary": "復活基督與友愛團體",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌顯現給祂的母親",
+        "source": "《神操》299；若望福音 14:19",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "耶穌在祂的朋友中間",
+        "source": "若望福音 20:19–29",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "耶穌活在友愛的團體內",
+        "source": "若望福音 21",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "耶穌活在友愛的團體內（2）",
+        "source": "若望福音 21",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "我同你們天天在一起",
+        "source": "瑪竇福音 28:20",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "耶穌臨在於祂的教會內",
+        "source": "宗徒大事錄 1:1–11",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "《神操》299；若 14:19；若 20:19–29；若 21；瑪 28:20；宗 1:1–11",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 33,
+    "summary": "聖神、派遣與使命",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌派遣聖神和門徒們",
+        "source": "若望福音 20:19–23",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "耶穌派遣門徒（1）",
+        "source": "瑪竇福音 28:19–20",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "耶穌派遣門徒（2）",
+        "source": "路加福音 24:45–53；宗徒大事錄 1:1–11",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "派遣聖神",
+        "source": "宗徒大事錄 2",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "耶穌顯現給保祿",
+        "source": "格林多前書 15:8",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "派遣保祿",
+        "source": "宗徒大事錄 13:2",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "複習 Day 1–6",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 34,
+    "summary": "聖神內的生活與神恩",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌顯現給他人",
+        "source": "《神操》第四週復活顯現精神",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "耶穌派遣他人",
+        "source": "依撒意亞 6:8",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "順服於聖神的生活",
+        "source": "羅馬書 8",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "聖神的果實",
+        "source": "迦拉達書 5:22–6:10",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "同一聖神的不同神恩",
+        "source": "格林多前書 12",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "友愛的神恩",
+        "source": "格林多前書 13",
+        "youtube": ""
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "複習 Day 1–6",
+        "youtube": ""
+      }
+    ]
+  },
+  {
+    "week": 35,
+    "summary": "獲得愛情的默觀與在一切事情上尋求並找到天主",
+    "days": [
+      {
+        "day": 1,
+        "title": "獲得愛情的默觀－第一端",
+        "source": "《神操》234",
+        "youtube": ""
+      },
+      {
+        "day": 2,
+        "title": "獲得愛情的默觀－第二端",
+        "source": "《神操》235",
+        "youtube": ""
+      },
+      {
+        "day": 3,
+        "title": "獲得愛情的默觀－第三端",
+        "source": "《神操》236",
+        "youtube": ""
+      },
+      {
+        "day": 4,
+        "title": "獲得愛情的默觀－第四端",
+        "source": "《神操》237",
+        "youtube": ""
+      },
+      {
+        "day": 5,
+        "title": "獲得愛情的默觀－總結",
+        "source": "綜整《神操》234–237",
+        "youtube": ""
+      },
+      {
+        "day": 6,
+        "title": "在一切事情上尋求並找到天主",
+        "source": "",
+        "youtube": ""
+      }
+    ]
+  }
+];
+
+const weeksEl = document.getElementById('weeks');
+const searchEl = document.getElementById('search');
+const filterEl = document.getElementById('weekFilter');
+const statsEl = document.getElementById('stats');
+
+weeksData.forEach(w => {
+  const option = document.createElement('option');
+  option.value = String(w.week);
+  option.textContent = `Week ${w.week}`;
+  filterEl.appendChild(option);
+});
+
+function esc(s='') {
+  return String(s).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+}
+
+function render() {
+  const q = searchEl.value.trim().toLowerCase();
+  const selectedWeek = filterEl.value;
+  weeksEl.innerHTML = '';
+
+  let shownWeeks = 0;
+  let shownDays = 0;
+  let knownDays = 0;
+
+  weeksData.forEach(w => {
+    if (selectedWeek && String(w.week) !== selectedWeek) return;
+
+    const matchedDays = w.days.filter(d => {
+      const hay = `${w.week} ${w.summary} ${d.day} ${d.title} ${d.source}`.toLowerCase();
+      return !q || hay.includes(q);
+    });
+    if (!matchedDays.length) return;
+
+    shownWeeks++;
+    shownDays += matchedDays.length;
+    knownDays += matchedDays.filter(d => d.title || d.source).length;
+
+    const details = document.createElement('details');
+    details.className = 'week';
+    details.open = !!q || !!selectedWeek || w.week === 35;
+
+    const rows = matchedDays.map(d => {
+      const title = d.title ? esc(d.title) : '<span class="pending">資料待補</span>';
+      const source = d.source ? esc(d.source) : '<span class="pending">資料待補</span>';
+      const yt = d.youtube
+        ? `<a class="youtube" href="${esc(d.youtube)}" target="_blank" rel="noopener">▶ YouTube</a>`
+        : '';
+      return `
+        <tr>
+          <td class="day">Day ${d.day}</td>
+          <td class="title">${title}</td>
+          <td class="source">${source}</td>
+          <td class="yt">${yt}</td>
+        </tr>`;
+    }).join('');
+
+    details.innerHTML = `
+      <summary>
+        <div class="week-left">
+          <div class="week-no">Week ${w.week}</div>
+          <div>
+            <div class="week-title">${esc(w.summary)}</div>
+            <div class="week-meta">本週主題摘要 · ${w.days.length} 天</div>
+          </div>
+        </div>
+        <div class="chev">⌄</div>
+      </summary>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Day</th><th>每日標題</th><th>經文／《神操》來源</th><th>YouTube</th></tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>`;
+    weeksEl.appendChild(details);
+  });
+
+  statsEl.innerHTML = `
+    <span class="chip">顯示 ${shownWeeks} 週</span>
+    <span class="chip">${shownDays} 個 Day</span>
+    <span class="chip">${knownDays} 筆已確認資料</span>`;
+}
+
+searchEl.addEventListener('input', render);
+filterEl.addEventListener('change', render);
+document.getElementById('openAll').addEventListener('click', () => document.querySelectorAll('details.week').forEach(x => x.open = true));
+document.getElementById('closeAll').addEventListener('click', () => document.querySelectorAll('details.week').forEach(x => x.open = false));
+
+render();
+</script>
+</body>
+</html>
