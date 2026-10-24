@@ -1,0 +1,2980 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="35週的日常生活中的神操：聖依納爵神操、聖經默想、AI短視頻靈修總覽。">
+  <title>35週的日常生活中的神操｜Spiritual Exercises in Daily Life</title>
+  <style>
+    :root {
+      --bg: #fbf9f4;
+      --card: #ffffff;
+      --ink: #26332d;
+      --muted: #6c756f;
+      --line: #e6dfd1;
+      --gold: #9a6b25;
+      --gold-soft: #f4ead7;
+      --green: #3f5d4c;
+      --shadow: 0 8px 28px rgba(38, 51, 45, .08);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #f7f1e5 0, var(--bg) 280px);
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.75;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 64px 0 30px; text-align: center; }
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      padding: 12px 0 14px;
+      margin-bottom: 18px;
+      background: rgba(247, 241, 229, .96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .top-nav a, .top-nav button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 118px;
+      padding: 10px 18px;
+      border: 2px solid var(--gold);
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--green);
+      font-weight: 800;
+      box-shadow: 0 5px 14px rgba(38, 51, 45, .12);
+      text-decoration: none;
+    }
+    .top-nav a:hover, .top-nav button:hover {
+      background: var(--gold-soft);
+      text-decoration: none;
+    }
+.eyebrow {
+      display: inline-block; padding: 6px 12px; border: 1px solid #d8c7a6;
+      border-radius: 999px; color: var(--gold); background: rgba(255,255,255,.55);
+      font-size: .86rem; letter-spacing: .08em;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.2; margin: 18px 0 10px; color: #2d4739; }
+    .subtitle { color: var(--gold); font-size: clamp(1rem, 2vw, 1.22rem); margin: 0 0 24px; }
+    .intro {
+      max-width: 850px; margin: 0 auto; background: rgba(255,255,255,.78);
+      border: 1px solid var(--line); padding: 24px 28px; border-radius: var(--radius); box-shadow: var(--shadow);
+      text-align: left;
+    }
+    .intro strong { color: var(--green); }
+    .amdg { text-align:center; margin-top: 14px; color: var(--gold); font-weight: 700; letter-spacing: .08em; }
+    .toolbar {
+      position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px);
+      background: rgba(251,249,244,.92); border-bottom: 1px solid var(--line);
+      padding: 12px 0; margin-top: 24px;
+    }
+    .toolbar-inner { display: grid; grid-template-columns: 1fr 180px auto auto; gap: 10px; align-items: center; }
+    input, select, button {
+      font: inherit; border: 1px solid #d8d3c7; background: white; color: var(--ink);
+      border-radius: 12px; padding: 10px 12px;
+    }
+    button { cursor: pointer; color: var(--green); }
+    button:hover { border-color: #bda67d; background: #fffaf0; }
+    main { padding: 28px 0 72px; }
+    details.week {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: var(--shadow); margin: 0 0 16px; overflow: hidden;
+    }
+    summary {
+      list-style: none; cursor: pointer; padding: 20px 24px;
+      display:flex; gap:16px; align-items:center; justify-content:space-between;
+    }
+    summary::-webkit-details-marker { display:none; }
+    .week-left { display:flex; gap:14px; align-items:center; min-width:0; }
+    .week-no {
+      min-width: 74px; height: 48px; border-radius: 14px; display:grid; place-items:center;
+      background: var(--gold-soft); color: var(--gold); font-weight: 800;
+    }
+    .week-title { font-size: 1.18rem; font-weight: 800; color: var(--green); }
+    .week-meta { color: var(--muted); font-size: .88rem; }
+    .chev { color:#9a8f7d; font-size:1.2rem; transition:.2s; }
+    details[open] .chev { transform: rotate(180deg); }
+    .table-wrap { overflow-x:auto; border-top:1px solid var(--line); }
+    table { border-collapse: collapse; width:100%; min-width: 1180px; }
+    th, td { padding: 14px 16px; text-align:left; vertical-align:top; border-bottom:1px solid #eee9df; }
+    th { background:#fcfaf5; color:#6b5b42; font-size:.88rem; letter-spacing:.04em; }
+    tbody tr:last-child td { border-bottom:0; }
+    tbody tr:hover { background:#fffdf8; }
+    td.day { width:88px; color:var(--gold); font-weight:800; white-space:nowrap; }
+    td.title { width:24%; font-weight:700; color:#304a3d; }
+    td.desc { width:30%; color:#4d5751; }
+    td.source { width:28%; color:#4d5751; }
+    td.yt { width:180px; }
+    .youtube {
+      display:inline-flex; align-items:center; gap:6px; padding:5px 9px; border:1px solid #decbb0;
+      border-radius:999px; background:#fffaf2; font-size:.88rem; font-weight:700;
+    }
+    .pending { color:#aaa197; font-style:italic; font-weight:400; }
+    .data-note {
+      margin: 28px 0 0; padding: 18px 20px; border-left: 4px solid #ceb27d;
+      background: #fffaf0; border-radius: 0 12px 12px 0; color:#675d50; font-size:.92rem;
+    }
+    footer { padding: 28px 0 48px; text-align:center; color:var(--muted); border-top:1px solid var(--line); }
+    footer strong { color:var(--gold); }
+    .hidden { display:none !important; }
+    @media (max-width: 760px) {
+      html, body { max-width:100%; overflow-x:hidden; }
+      .wrap { width:min(100% - 20px, 1180px); }
+      header { padding-top:24px; }
+      .top-nav {
+        position:static;
+        justify-content:center;
+        padding:8px 0 12px;
+        margin-bottom:10px;
+      }
+      .top-nav a, .top-nav button {
+        min-width:0;
+        padding:8px 12px;
+        font-size:.92rem;
+      }
+
+      .toolbar {
+        position:static;
+        padding:10px 0;
+        margin-top:12px;
+      }
+      .toolbar-inner {
+        display:grid;
+        grid-template-columns:1fr;
+        gap:8px;
+      }
+      .toolbar-inner input,
+      .toolbar-inner select {
+        width:100%;
+        min-width:0;
+      }
+      .toolbar-inner button { display:none; }
+
+      main { padding-top:16px; }
+
+      summary {
+        padding:14px;
+        gap:10px;
+        align-items:flex-start;
+      }
+      .week-left {
+        align-items:flex-start;
+        gap:10px;
+      }
+      .week-no {
+        min-width:58px;
+        height:40px;
+        border-radius:11px;
+        font-size:.88rem;
+      }
+      .week-title {
+        font-size:1rem;
+        line-height:1.45;
+      }
+      .week-meta { font-size:.8rem; }
+
+      /* Turn the wide desktop table into vertical day cards. */
+      .table-wrap {
+        overflow:visible;
+        padding:10px;
+        background:#faf8f2;
+      }
+      table {
+        display:block;
+        width:100%;
+        min-width:0 !important;
+        border-collapse:separate;
+      }
+      thead { display:none; }
+      tbody {
+        display:block;
+        width:100%;
+      }
+      tbody tr {
+        display:block;
+        width:100%;
+        margin:0 0 12px;
+        padding:14px;
+        border:1px solid var(--line);
+        border-radius:14px;
+        background:#fff;
+        box-shadow:0 3px 12px rgba(38,51,45,.05);
+      }
+      tbody tr:last-child { margin-bottom:0; }
+
+      td,
+      td.day,
+      td.title,
+      td.desc,
+      td.source,
+      td.yt {
+        display:block;
+        width:100% !important;
+        min-width:0 !important;
+        padding:8px 0;
+        border:0;
+        white-space:normal;
+        overflow-wrap:anywhere;
+        word-break:break-word;
+      }
+
+      td:not(.day)::before {
+        content:attr(data-label);
+        display:block;
+        margin-bottom:4px;
+        color:#8a7657;
+        font-size:.76rem;
+        font-weight:700;
+        letter-spacing:.02em;
+      }
+
+      td.day {
+        display:inline-block;
+        width:auto !important;
+        padding:5px 10px;
+        margin-bottom:5px;
+        border-radius:999px;
+        background:var(--gold-soft);
+        color:var(--gold);
+        font-size:.86rem;
+        font-weight:800;
+      }
+
+      td.title {
+        font-size:1.04rem;
+        line-height:1.5;
+      }
+      td.desc,
+      td.source {
+        font-size:.94rem;
+        line-height:1.65;
+      }
+
+      /* Don't show empty public fields on mobile. */
+      td.desc:empty,
+      td.source:empty,
+      td.yt:empty {
+        display:none;
+      }
+
+      td.yt {
+        padding-top:10px;
+      }
+      .youtube {
+        display:flex;
+        width:100%;
+        min-height:44px;
+        justify-content:center;
+        align-items:center;
+        padding:9px 12px;
+        border-radius:12px;
+        text-align:center;
+      }
+
+      /* Admin editing: every field fits within the phone width. */
+      .admin-bar {
+        position:static;
+        padding:10px;
+        margin-top:10px;
+      }
+      .admin-actions {
+        width:100%;
+        display:grid;
+        grid-template-columns:1fr;
+      }
+      .admin-actions button {
+        width:100%;
+        min-height:42px;
+      }
+      .admin-field,
+      .admin-field.title-input,
+      .admin-field.desc-input,
+      .admin-field.source-input,
+      .yt-input {
+        display:block;
+        width:100% !important;
+        max-width:100%;
+        min-width:0 !important;
+        box-sizing:border-box;
+        font-size:16px; /* avoids iOS auto zoom */
+      }
+
+      .series-dialog,
+      .admin-login {
+        width:min(94vw,680px);
+      }
+      .series-dialog-inner,
+      .admin-login-inner {
+        padding:18px;
+      }
+    }
+    @media print {
+      .toolbar { display:none; }
+      details.week { break-inside:avoid; box-shadow:none; }
+      details.week:not([open]) > .table-wrap { display:block; }
+    }
+  
+    [hidden] { display: none !important; }
+
+    .admin-bar {
+      display:flex;
+      background:#fff7e8;
+      border:1px solid #dec79f;
+      border-radius:14px;
+      padding:10px 12px;
+      margin:14px auto 0;
+      box-shadow:var(--shadow);
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .admin-bar strong { color:var(--gold); }
+    .admin-actions { display:flex; gap:8px; flex-wrap:wrap; }
+    .admin-actions button {
+      border:1px solid #cbb489;
+      background:white;
+      color:var(--green);
+      border-radius:10px;
+      padding:8px 11px;
+      cursor:pointer;
+    }
+    .admin-note { color:var(--muted); font-size:.86rem; }
+    .yt-input {
+      width:100%;
+      min-width:240px;
+      padding:8px 10px;
+      border:1px solid #d8d3c7;
+      border-radius:9px;
+      font:inherit;
+      background:#fff;
+    }
+    .yt-input.invalid { border-color:#b44444; background:#fff5f5; }
+    .admin-field {
+      width:100%; min-width:180px; padding:8px 10px; border:1px solid #d8d3c7;
+      border-radius:9px; font:inherit; line-height:1.45; background:#fff; color:var(--ink);
+      resize:vertical;
+    }
+    .admin-field.title-input { min-width:220px; font-weight:700; }
+    .admin-field.desc-input { min-width:280px; }
+    .admin-field.source-input { min-width:230px; }
+
+
+    .series-dialog, .admin-login {
+      border:0;
+      border-radius:18px;
+      padding:0;
+      width:min(92vw,680px);
+      box-shadow:0 22px 70px rgba(0,0,0,.22);
+    }
+    .admin-login { width:min(92vw,440px); }
+    .series-dialog::backdrop, .admin-login::backdrop {
+      background:rgba(20,30,25,.46);
+      backdrop-filter:blur(3px);
+    }
+    .series-dialog-inner, .admin-login-inner {
+      padding:24px;
+      background:#fff;
+      border-radius:18px;
+    }
+    .series-dialog h2, .admin-login h2 {
+      margin:0 0 10px;
+      color:var(--green);
+    }
+    .series-dialog .meta {
+      margin-top:16px;
+      padding:14px 16px;
+      background:#fbf7ee;
+      border-radius:12px;
+    }
+    .dialog-actions {
+      display:flex;
+      justify-content:flex-end;
+      gap:8px;
+      margin-top:18px;
+    }
+    .close-btn {
+      border:1px solid #cbb489;
+      background:#fff;
+      color:var(--green);
+      border-radius:10px;
+      padding:8px 14px;
+      cursor:pointer;
+    }
+    .admin-login input {
+      width:100%;
+      padding:11px 12px;
+      border:1px solid #d8d3c7;
+      border-radius:10px;
+      font:inherit;
+      margin-bottom:10px;
+    }
+    .admin-error {
+      min-height:1.3em;
+      color:#a33636;
+      font-size:.9rem;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav class="top-nav" aria-label="主要導覽">
+      <a href="https://www.hyloveclub.com" target="_blank" rel="noopener">🏠 Home</a>
+      <button id="seriesBtn" type="button">📘 系列說明</button>
+      <button id="adminBtn" type="button">🔐 Admin</button>
+    </nav>
+    <div class="eyebrow">IGNATIAN SPIRITUALITY · DAILY LIFE</div>
+    <h1>35週的日常生活中的神操</h1>
+    <p class="subtitle">Spiritual Exercises in Daily Life · 35 Weeks</p>
+    <div class="amdg">AMDG｜愈顯主榮</div>
+  </div>
+</header>
+
+<dialog id="seriesDialog" class="series-dialog">
+  <div class="series-dialog-inner">
+    <h2>系列說明</h2>
+    <p>《35週的日常生活中的神操》以聖依納爵《神操》為靈修基礎，結合聖經默想、祈禱、省察與生活實踐，透過35週循序漸進的每日主題，陪伴現代人在日常生活中尋求並找到天主。</p>
+    <p>這個 AI 靈修短視頻系列歷時約一年半，從天主臨在、反省與悔改、耶穌的童年與公開生活、天國的訊息、使命與召叫、受難與復活，到「獲得愛情的默觀」，最後回到每天的祈禱與生活，以愛回應天主，並在一切事情上實行「愈顯主榮」。</p>
+    <div class="meta">
+      <strong style="color:var(--green);">主要依據：</strong>《日常生活中的神操》（第一冊至第三冊），穆志宏、朱修德合著，台北市：上智，1998。<br>
+      <strong style="color:var(--green);">AI 靈修短視頻：</strong>由 Dr. Maria R. Lee 製作，耶穌孝女會 Sr. Teresita Chi 指導。
+    </div>
+    <div class="dialog-actions"><button id="seriesClose" class="close-btn" type="button">關閉</button></div>
+  </div>
+</dialog>
+
+<dialog id="adminDialog" class="admin-login">
+  <div class="admin-login-inner">
+    <h2>Admin 編輯模式</h2>
+    <p>輸入密碼後，可直接編輯每日標題、經文／《神操》來源、簡短說明與 YouTube 影片網址。</p>
+    <input id="adminPassword" type="password" autocomplete="current-password" placeholder="Password">
+    <div id="adminError" class="admin-error"></div>
+    <div class="dialog-actions">
+      <button id="adminCancel" class="close-btn" type="button">取消</button>
+      <button id="adminUnlock" class="close-btn" type="button">進入編輯</button>
+    </div>
+  </div>
+</dialog>
+
+<div class="toolbar">
+  <div class="wrap toolbar-inner">
+    <input id="search" type="search" placeholder="搜尋：Week 35、w35、35週、主題、經文…" aria-label="搜尋">
+    <select id="weekFilter" aria-label="選擇週次">
+      <option value="">全部週次</option></select>
+    <button id="openAll" type="button">全部展開</button>
+    <button id="closeAll" type="button">全部收合</button>
+  </div>
+</div>
+
+<div class="wrap">
+  <div id="adminBar" class="admin-bar" hidden>
+    <div>
+      <strong>🔓 Admin 編輯模式</strong>
+      <span class="admin-note">　可編輯每日標題、來源、簡短說明與 YouTube 網址；先儲存於此瀏覽器，再下載更新後的 index.html。</span>
+    </div>
+    <div class="admin-actions">
+      <button id="saveLinks" type="button">💾 Save</button>
+      <button id="downloadHtml" type="button">⬇ Download Updated index.html</button>
+      <button id="exitAdmin" type="button">🔒 Exit</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div id="weeks"></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    35週《日常生活中的神操》 · AI短視頻靈修<br>
+    <strong>在一切事情上尋求並找到天主 · 愈顯主榮</strong>
+  </div>
+</footer>
+
+<script>
+const weeksData = [
+  {
+    "week": 1,
+    "summary": "天主臨在、渴慕與相遇",
+    "days": [
+      {
+        "day": 1,
+        "title": "天主臨在",
+        "source": "聖詠 139",
+        "youtube": "https://www.youtube.com/watch?v=9gwHWHn3wc8",
+        "description": "透過 聖詠 139，在日常經驗中覺察天主的臨在，並以祈禱與生活回應祂。"
+      },
+      {
+        "day": 2,
+        "title": "渴慕天主",
+        "source": "聖詠 42、63",
+        "youtube": "https://www.youtube.com/watch?v=5HCymMuv00A",
+        "description": "透過 聖詠 42、63，反省內心對天主的渴望，讓祈禱帶領生命更深地歸向祂。"
+      },
+      {
+        "day": 3,
+        "title": "以天主的觀點渴慕天主",
+        "source": "出谷紀 33:12–23",
+        "youtube": "https://www.youtube.com/watch?v=pqPbYS38Pfo",
+        "description": "透過 出谷紀 33:12–23，反省內心對天主的渴望，讓祈禱帶領生命更深地歸向祂。"
+      },
+      {
+        "day": 4,
+        "title": "蒙召經驗基督",
+        "source": "若望福音 1:35–41",
+        "youtube": "https://www.youtube.com/watch?v=3EHEIvrVsnQ",
+        "description": "透過 若望福音 1:35–41，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 5,
+        "title": "獲得經驗的條件",
+        "source": "聆聽：撒慕爾紀上 3:1–12；慷慨：宗徒大事錄 22:6–11；接受：路加福音 1:26–38",
+        "youtube": "https://www.youtube.com/watch?v=vLf3l77uF6w",
+        "description": "透過 聆聽：撒慕爾紀上 3:1–12；慷慨：宗徒大事錄 22:6–11；接受：路加福音 1:26–38，以「獲得經驗的條件」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "與主相遇",
+        "source": "若望福音 4:4–42",
+        "youtube": "https://www.youtube.com/watch?v=9ldjAuvrMIc",
+        "description": "透過 若望福音 4:4–42，在日常經驗中覺察天主的臨在，並以祈禱與生活回應祂。"
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=rGgXqWmKfjk",
+        "description": "回顧本週「天主臨在、渴慕與相遇」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 2,
+    "summary": "反省、棄絕與慷慨跟隨",
+    "days": [
+      {
+        "day": 1,
+        "title": "反省和棄絕",
+        "source": "路加福音 14:25–33",
+        "youtube": "https://www.youtube.com/watch?v=MJbYZ2INApk",
+        "description": "透過 路加福音 14:25–33，以「反省和棄絕」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "反省和棄絕",
+        "source": "若望福音 12:20–36",
+        "youtube": "https://www.youtube.com/watch?v=A-Ik52LqooQ",
+        "description": "透過 若望福音 12:20–36，以「反省和棄絕」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "神操的本質",
+        "source": "瑪竇福音 10:39、16:25；馬爾谷福音 8:35；路加福音 9:24、17:33",
+        "youtube": "https://www.youtube.com/watch?v=krWEMYX3Vk4",
+        "description": "透過 瑪竇福音 10:39、16:25；馬爾谷福音 8:35；路加福音 9:24、17:33，以「神操的本質」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "神操的本質（2）",
+        "source": "迦拉達書 2:20",
+        "youtube": "https://www.youtube.com/watch?v=lOEEeYCPv-w",
+        "description": "透過 迦拉達書 2:20，以「神操的本質（2）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "不急躁",
+        "source": "路加福音 8:5–15",
+        "youtube": "https://www.youtube.com/watch?v=IRCBF_ugfo8",
+        "description": "透過 路加福音 8:5–15，以「不急躁」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "慷慨的精神",
+        "source": "路加福音 9:57–62",
+        "youtube": "https://www.youtube.com/watch?v=Y-Kcczj91gg",
+        "description": "透過 路加福音 9:57–62，以「慷慨的精神」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=YKDc8gw-8i8",
+        "description": "回顧本週「反省、棄絕與慷慨跟隨」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 3,
+    "summary": "祈禱、自由與信賴",
+    "days": [
+      {
+        "day": 1,
+        "title": "過程中的時間",
+        "source": "《神操》76；路加福音 21:19",
+        "youtube": "https://www.youtube.com/watch?v=UaamWJujfDM",
+        "description": "透過 《神操》76；路加福音 21:19，以「過程中的時間」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "隨意措置取用",
+        "source": "戶籍紀 11:26–30；若望福音 3:22–30；希伯來書 10:4–10",
+        "youtube": "https://www.youtube.com/watch?v=202U6C4ULzg",
+        "description": "透過 戶籍紀 11:26–30；若望福音 3:22–30；希伯來書 10:4–10，反省內在自由與依戀，把所領受的一切更自由地交託給天主並用於服務。"
+      },
+      {
+        "day": 3,
+        "title": "持續祈禱",
+        "source": "《神操》12、13、15 凡例",
+        "youtube": "https://www.youtube.com/watch?v=hCOi4W-hbJA",
+        "description": "透過 《神操》12、13、15 凡例，學習在祈禱中聆聽、停留與分辨，使與天主的關係更真實。"
+      },
+      {
+        "day": 4,
+        "title": "再談祈禱",
+        "source": "瑪竇福音 6:5–15；出谷紀 3:1–2",
+        "youtube": "https://www.youtube.com/watch?v=wdrJFCCfQeE",
+        "description": "透過 瑪竇福音 6:5–15；出谷紀 3:1–2，學習在祈禱中聆聽、停留與分辨，使與天主的關係更真實。"
+      },
+      {
+        "day": 5,
+        "title": "續談祈禱",
+        "source": "路加福音 10:9–13；羅馬書 8:26–27；箴言 7:3；聖詠 119",
+        "youtube": "https://www.youtube.com/watch?v=Ji6pzvZpJyk",
+        "description": "透過 路加福音 10:9–13；羅馬書 8:26–27；箴言 7:3；聖詠 119，學習在祈禱中聆聽、停留與分辨，使與天主的關係更真實。"
+      },
+      {
+        "day": 6,
+        "title": "謙遜的信賴",
+        "source": "瑪竇福音 18:1–4",
+        "youtube": "https://www.youtube.com/watch?v=oD3lOtgYe40",
+        "description": "透過 瑪竇福音 18:1–4，以「謙遜的信賴」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "複習第1–6天",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=U9HFQr7kBcw",
+        "description": "回顧本週「祈禱、自由與信賴」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 4,
+    "summary": "天主的愛與人的徬徨",
+    "days": [
+      {
+        "day": 1,
+        "title": "你愛一切所有，不恨你所造的",
+        "source": "智慧篇 11:25",
+        "youtube": "https://www.youtube.com/watch?v=8sjqJZPj4K0",
+        "description": "透過 智慧篇 11:25，從天主的愛出發，反省如何以更自由、真誠而具體的方式愛主愛人。"
+      },
+      {
+        "day": 2,
+        "title": "",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=sdzkq1tMCCA",
+        "description": ""
+      },
+      {
+        "day": 3,
+        "title": "",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=50Eugt1Ana8",
+        "description": ""
+      },
+      {
+        "day": 4,
+        "title": "人的徬徨處境",
+        "source": "若望壹書 4:7–12",
+        "youtube": "https://www.youtube.com/watch?v=j8w9uyPAuw8",
+        "description": "透過 若望壹書 4:7–12，以「人的徬徨處境」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=5TkHUiFo3xk",
+        "description": ""
+      },
+      {
+        "day": 6,
+        "title": "",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=rO4TpZxZFpI",
+        "description": ""
+      },
+      {
+        "day": 7,
+        "title": "我在你的門口敲門",
+        "source": "默示錄 3:20",
+        "youtube": "https://www.youtube.com/watch?v=ZunR_BY5CDI",
+        "description": "透過 默示錄 3:20，以「我在你的門口敲門」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      }
+    ]
+  },
+  {
+    "week": 5,
+    "summary": "按天主肖像受造與管理責任",
+    "days": [
+      {
+        "day": 1,
+        "title": "天主按照祂的肖像和模樣造了人",
+        "source": "創世紀 1:26",
+        "youtube": "https://www.youtube.com/watch?v=WxRuJEn87n0",
+        "description": "透過 創世紀 1:26，以「天主按照祂的肖像和模樣造了人」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "人子算什麼，你竟對他眷顧周詳",
+        "source": "聖詠 8:5",
+        "youtube": "https://www.youtube.com/watch?v=EWBxr083S0Y",
+        "description": "透過 聖詠 8:5，以「人子算什麼，你竟對他眷顧周詳」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "基督耶穌，新受造的人",
+        "source": "哥羅森書 1:22–23",
+        "youtube": "https://www.youtube.com/watch?v=jbI2CSsIUEA",
+        "description": "透過 哥羅森書 1:22–23，以「基督耶穌，新受造的人」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "我們是天主奧秘的管理人",
+        "source": "格林多前書 3:5–23",
+        "youtube": "https://www.youtube.com/watch?v=3swYaxeS32E",
+        "description": "透過 格林多前書 3:5–23，以「我們是天主奧秘的管理人」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "管理人責任就是做忠信的人",
+        "source": "瑪竇福音 25:14–30",
+        "youtube": "https://www.youtube.com/watch?v=diTfc2-YMYg",
+        "description": "透過 瑪竇福音 25:14–30，以「管理人責任就是做忠信的人」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "基督徒的負責態度",
+        "source": "格林多後書 6:3–13",
+        "youtube": "https://www.youtube.com/watch?v=OsBb-IK8INM",
+        "description": "透過 格林多後書 6:3–13，以「基督徒的負責態度」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=cys55DMQAlg",
+        "description": "回顧本週「按天主肖像受造與管理責任」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 6,
+    "summary": "受造目的、自由與奉獻",
+    "days": [
+      {
+        "day": 1,
+        "title": "一切皆為達成受造之目的",
+        "source": "《神操》23",
+        "youtube": "https://www.youtube.com/watch?v=gM5mK3IN2Dg",
+        "description": "透過 《神操》23，以「一切皆為達成受造之目的」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "人用事物，或多或少，全看它們是否襄助他",
+        "source": "《神操》23",
+        "youtube": "https://www.youtube.com/watch?v=PMi_Lx8AiEo",
+        "description": "透過 《神操》23，以「人用事物，或多或少，全看它們是否襄助他」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "主觀的條件",
+        "source": "《神操》23；伯多祿後書 1:3–10",
+        "youtube": "https://www.youtube.com/watch?v=7gLAOAok2oM",
+        "description": "透過 《神操》23；伯多祿後書 1:3–10，以「主觀的條件」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "神修的中立、平衡與自由",
+        "source": "若望福音 3:25–36",
+        "youtube": "https://www.youtube.com/watch?v=8g8CrtQzMBo",
+        "description": "透過 若望福音 3:25–36，反省內在自由與依戀，把所領受的一切更自由地交託給天主並用於服務。"
+      },
+      {
+        "day": 5,
+        "title": "精神和肉身的敵對",
+        "source": "迦拉達書 5:13–26",
+        "youtube": "https://www.youtube.com/watch?v=DtpEeXFemv8",
+        "description": "透過 迦拉達書 5:13–26，以「精神和肉身的敵對」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "更高的精神：慷慨的自我奉獻",
+        "source": "瑪竇福音 13:44–46",
+        "youtube": "https://www.youtube.com/watch?v=qmTd9ZARKqE",
+        "description": "透過 瑪竇福音 13:44–46，反省內在自由與依戀，把所領受的一切更自由地交託給天主並用於服務。"
+      },
+      {
+        "day": 7,
+        "title": "啟示與反省——依納爵神操綜整",
+        "source": "若望福音 8:31–32",
+        "youtube": "https://www.youtube.com/watch?v=7yY6ML-D-9M",
+        "description": "透過 若望福音 8:31–32，以「啟示與反省——依納爵神操綜整」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      }
+    ]
+  },
+  {
+    "week": 7,
+    "summary": "面對罪與接受寬恕",
+    "days": [
+      {
+        "day": 1,
+        "title": "我也不定你的罪，從今以後，不要再犯罪了",
+        "source": "若望福音 8:2–11",
+        "youtube": "https://www.youtube.com/watch?v=A0cmS28uVb4",
+        "description": "透過 若望福音 8:2–11，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 2,
+        "title": "如果我們說我們沒有犯罪，就是欺騙自己",
+        "source": "若望壹書 1:5–2:2",
+        "youtube": "https://www.youtube.com/watch?v=OedC54GFQvs",
+        "description": "透過 若望壹書 1:5–2:2，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 3,
+        "title": "主，請你離開我，因我是罪人",
+        "source": "路加福音 5:1–11",
+        "youtube": "https://www.youtube.com/watch?v=uwz_AJFEAYc",
+        "description": "透過 路加福音 5:1–11，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 4,
+        "title": "來，讓我們趁年輕享受美麗吧",
+        "source": "智慧篇 2:1–24",
+        "youtube": "https://www.youtube.com/watch?v=ta3RsbiB6gA",
+        "description": "透過 智慧篇 2:1–24，以「來，讓我們趁年輕享受美麗吧」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "誰能救我脫離這該死的肉身？",
+        "source": "羅馬書 7:14–25",
+        "youtube": "https://www.youtube.com/watch?v=LhkvV9wwxPs",
+        "description": "透過 羅馬書 7:14–25，以「誰能救我脫離這該死的肉身？」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "我們都在上主前犯了罪，這恥辱是我們應得的",
+        "source": "巴路克 1:15",
+        "youtube": "https://www.youtube.com/watch?v=zkMponYagZ0",
+        "description": "透過 巴路克 1:15，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 7,
+        "title": "複習與反省",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=7El3iYd7Zhk",
+        "description": "回顧本週「面對罪與接受寬恕」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "summary": "罪惡的歷史",
+    "days": [
+      {
+        "day": 1,
+        "title": "罪惡的歷史：撒殫的罪惡",
+        "source": "若望福音 8:39–47",
+        "youtube": "https://www.youtube.com/watch?v=z7jdpmdzEoI",
+        "description": "透過 若望福音 8:39–47，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 2,
+        "title": "罪惡的歷史：原罪",
+        "source": "創世紀 3",
+        "youtube": "https://www.youtube.com/watch?v=hT3UphdSkiM",
+        "description": "透過 創世紀 3，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 3,
+        "title": "罪惡的歷史：原罪",
+        "source": "創世紀 1–11",
+        "youtube": "https://www.youtube.com/watch?v=WuIjLZXZWns",
+        "description": "透過 創世紀 1–11，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 4,
+        "title": "罪惡的歷史：世界和人類的罪惡",
+        "source": "羅馬書 1:18–3:20",
+        "youtube": "https://www.youtube.com/watch?v=7rbhFzT-x6k",
+        "description": "透過 羅馬書 1:18–3:20，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 5,
+        "title": "罪惡的歷史：世界和人類的罪惡",
+        "source": "羅馬書 1:18–3:20",
+        "youtube": "https://www.youtube.com/watch?v=N36_s5nxa5E",
+        "description": "透過 羅馬書 1:18–3:20，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 6,
+        "title": "罪惡的歷史及其在三方面平行的發展",
+        "source": "路加福音 1:26、1:38",
+        "youtube": "https://www.youtube.com/watch?v=d6SV4KlHOOM",
+        "description": "透過 路加福音 1:26、1:38，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 7,
+        "title": "罪惡是什麼？罪惡的歷史",
+        "source": "創世紀 3；創世紀 4–11；羅馬書 5:20；瑪竇福音 9:2",
+        "youtube": "https://www.youtube.com/watch?v=L9hEZFBLd6w",
+        "description": "透過 創世紀 3；創世紀 4–11；羅馬書 5:20；瑪竇福音 9:2，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      }
+    ]
+  },
+  {
+    "week": 9,
+    "summary": "個人罪惡、愛與悔改",
+    "days": [
+      {
+        "day": 1,
+        "title": "你就是那個人",
+        "source": "撒慕爾紀下 11–12:14",
+        "youtube": "https://www.youtube.com/watch?v=AI9J44iS9aM",
+        "description": "透過 撒慕爾紀下 11–12:14，以「你就是那個人」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "反省自己的罪惡",
+        "source": "約伯傳 42:6",
+        "youtube": "https://www.youtube.com/watch?v=iiJaFZJib6Q",
+        "description": "透過 約伯傳 42:6，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 3,
+        "title": "愛的歷史",
+        "source": "厄則克耳先知書 16",
+        "youtube": "https://www.youtube.com/watch?v=i1_AJPh-kR0",
+        "description": "透過 厄則克耳先知書 16，從天主的愛出發，反省如何以更自由、真誠而具體的方式愛主愛人。"
+      },
+      {
+        "day": 4,
+        "title": "愛的歷史（續）",
+        "source": "厄則克耳先知書 16:60–63",
+        "youtube": "https://www.youtube.com/watch?v=Gmpdax6XG-o",
+        "description": "透過 厄則克耳先知書 16:60–63，從天主的愛出發，反省如何以更自由、真誠而具體的方式愛主愛人。"
+      },
+      {
+        "day": 5,
+        "title": "唯獨得罪了你",
+        "source": "聖詠 51",
+        "youtube": "https://www.youtube.com/watch?v=yu2tDbBvLJY",
+        "description": "透過 聖詠 51，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 6,
+        "title": "那裡將有哀號和切齒",
+        "source": "瑪竇福音 16:25",
+        "youtube": "https://www.youtube.com/watch?v=59_s6OJqfV0",
+        "description": "透過 瑪竇福音 16:25，以「那裡將有哀號和切齒」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "複習與反省：我有哪些不易悔改的罪？我該如何面對與回應？",
+        "source": "羅馬書 7:24–25；若望壹書 1:9；耶肋米亞 17:9；格林多後書 12:9；箴言 24:16；瑪竇福音 26:41；岳厄爾 2:12–13；斐理伯書 4:4；聖詠 19:13",
+        "youtube": "https://www.youtube.com/watch?v=-4w9xwLYTKQ",
+        "description": "回顧本週「個人罪惡、愛與悔改」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 10,
+    "summary": "罪的根源與內在分裂",
+    "days": [
+      {
+        "day": 1,
+        "title": "從人心裡出來的，是什麼？",
+        "source": "馬爾谷福音 7:21–23；配合聖詠 130",
+        "youtube": "https://www.youtube.com/watch?v=qltFKZrU8GY",
+        "description": "透過 馬爾谷福音 7:21–23；配合聖詠 130，以「從人心裡出來的，是什麼？」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "她的許多罪得了赦免，因為她愛得多",
+        "source": "路加福音 7:36–50",
+        "youtube": "https://www.youtube.com/watch?v=Z2vHG10rcDc",
+        "description": "透過 路加福音 7:36–50，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 3,
+        "title": "內在的分裂",
+        "source": "羅馬書 7:14–25",
+        "youtube": "https://www.youtube.com/watch?v=PtwFi8w-DeE",
+        "description": "透過 羅馬書 7:14–25，以「內在的分裂」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "山中聖訓的對比",
+        "source": "瑪竇福音 5:21–48",
+        "youtube": "https://www.youtube.com/watch?v=Rzjr9xDde84",
+        "description": "透過 瑪竇福音 5:21–48，從耶穌對天國的教導中反省價值、選擇與愛，並落實在日常生活。"
+      },
+      {
+        "day": 5,
+        "title": "反省我的違情悖理",
+        "source": "瑪竇福音 7:21–27、21:18–19",
+        "youtube": "https://www.youtube.com/watch?v=xnbxrTGytGg",
+        "description": "透過 瑪竇福音 7:21–27、21:18–19，以「反省我的違情悖理」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "罪惡的根由",
+        "source": "雅各伯書 4:1–10",
+        "youtube": "https://www.youtube.com/watch?v=OwAJ8WNrJnY",
+        "description": "透過 雅各伯書 4:1–10，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 7,
+        "title": "複習省察自己的軟弱及惡的傾向",
+        "source": "格林多前書 10:12；格林多後書 12:9；聖詠 132:8（另含雅 3:2、瑪 26:41 等）",
+        "youtube": "https://www.youtube.com/watch?v=aN58TNsE4uw",
+        "description": "回顧本週「罪的根源與內在分裂」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 11,
+    "summary": "面對世界、死亡與恩寵",
+    "days": [
+      {
+        "day": 1,
+        "title": "面對世界",
+        "source": "若望福音 2:15–16",
+        "youtube": "",
+        "description": "透過 若望福音 2:15–16，以「面對世界」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "死亡的奧秘：規定人只死一次",
+        "source": "希伯來書 9:27",
+        "youtube": "",
+        "description": "透過 希伯來書 9:27，在有限、失落與死亡的奧祕前，以信德凝視生命並學習交託與盼望。"
+      },
+      {
+        "day": 3,
+        "title": "罪惡藉著一人進入了世界，死亡藉著罪惡也進入了世界",
+        "source": "羅馬書 5:12–21",
+        "youtube": "",
+        "description": "透過 羅馬書 5:12–21，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 4,
+        "title": "",
+        "source": "",
+        "youtube": "",
+        "description": ""
+      },
+      {
+        "day": 5,
+        "title": "",
+        "source": "",
+        "youtube": "",
+        "description": ""
+      },
+      {
+        "day": 6,
+        "title": "",
+        "source": "",
+        "youtube": "",
+        "description": ""
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "",
+        "youtube": "",
+        "description": "回顧本週「面對世界、死亡與恩寵」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 12,
+    "summary": "悔改、仁慈與新的召叫",
+    "days": [
+      {
+        "day": 1,
+        "title": "聖經中的悔改者",
+        "source": "",
+        "youtube": "",
+        "description": "誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 2,
+        "title": "聖經中罪人的祈禱",
+        "source": "",
+        "youtube": "",
+        "description": "學習在祈禱中聆聽、停留與分辨，使與天主的關係更真實。"
+      },
+      {
+        "day": 3,
+        "title": "天主面對罪惡的行動",
+        "source": "",
+        "youtube": "",
+        "description": "誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 4,
+        "title": "耶穌的仁慈解放罪人",
+        "source": "",
+        "youtube": "",
+        "description": "誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 5,
+        "title": "耶穌的仁慈寬恕人——受到寬恕的喜樂",
+        "source": "",
+        "youtube": "",
+        "description": "誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 6,
+        "title": "保祿的悔改",
+        "source": "",
+        "youtube": "",
+        "description": "誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 7,
+        "title": "主，你要我做什麼？",
+        "source": "",
+        "youtube": "",
+        "description": "以「主，你要我做什麼？」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      }
+    ]
+  },
+  {
+    "week": 13,
+    "summary": "信賴、召叫與奉獻",
+    "days": [
+      {
+        "day": 1,
+        "title": "我知道我信賴的是誰",
+        "source": "",
+        "youtube": "",
+        "description": "以「我知道我信賴的是誰」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "耶穌召叫你為天國貢獻的意義",
+        "source": "",
+        "youtube": "",
+        "description": "聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 3,
+        "title": "主，祢住在哪裡",
+        "source": "",
+        "youtube": "",
+        "description": "以「主，祢住在哪裡」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "你們能飲我要飲的爵嗎",
+        "source": "",
+        "youtube": "",
+        "description": "以「你們能飲我要飲的爵嗎」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "萬物的永生主宰",
+        "source": "",
+        "youtube": "",
+        "description": "以「萬物的永生主宰」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "上主是我的牧者，我一無所缺",
+        "source": "",
+        "youtube": "",
+        "description": "以「上主是我的牧者，我一無所缺」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "默想對耶穌奉獻的意義",
+        "source": "",
+        "youtube": "",
+        "description": "反省內在自由與依戀，把所領受的一切更自由地交託給天主並用於服務。"
+      }
+    ]
+  },
+  {
+    "week": 14,
+    "summary": "降生奧蹟與瑪利亞",
+    "days": [
+      {
+        "day": 1,
+        "title": "降生奧蹟",
+        "source": "",
+        "youtube": "",
+        "description": "默觀降生與聖家奧蹟，在信賴、接納與日常忠實中學習回應天主。"
+      },
+      {
+        "day": 2,
+        "title": "耶穌聖誕",
+        "source": "",
+        "youtube": "",
+        "description": "默觀降生與聖家奧蹟，在信賴、接納與日常忠實中學習回應天主。"
+      },
+      {
+        "day": 3,
+        "title": "瑪利亞－天國之門（1）",
+        "source": "",
+        "youtube": "",
+        "description": "默觀降生與聖家奧蹟，在信賴、接納與日常忠實中學習回應天主。"
+      },
+      {
+        "day": 4,
+        "title": "瑪利亞－天國之門（2）",
+        "source": "",
+        "youtube": "",
+        "description": "默觀降生與聖家奧蹟，在信賴、接納與日常忠實中學習回應天主。"
+      },
+      {
+        "day": 5,
+        "title": "瑪利亞－天國之門（3）",
+        "source": "",
+        "youtube": "",
+        "description": "默觀降生與聖家奧蹟，在信賴、接納與日常忠實中學習回應天主。"
+      },
+      {
+        "day": 6,
+        "title": "運用五官默觀",
+        "source": "",
+        "youtube": "",
+        "description": "以「運用五官默觀」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "感動的奧蹟",
+        "source": "",
+        "youtube": "",
+        "description": "以「感動的奧蹟」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      }
+    ]
+  },
+  {
+    "week": 15,
+    "summary": "耶穌童年：若瑟、賢士與聖家",
+    "days": [
+      {
+        "day": 1,
+        "title": "",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=pNgWGLOqlek",
+        "description": ""
+      },
+      {
+        "day": 2,
+        "title": "若瑟領報",
+        "source": "瑪竇福音 1:18–25",
+        "youtube": "https://www.youtube.com/watch?v=qDM-v4ZD2RA",
+        "description": "透過 瑪竇福音 1:18–25，默觀降生與聖家奧蹟，在信賴、接納與日常忠實中學習回應天主。"
+      },
+      {
+        "day": 3,
+        "title": "賢士朝拜耶穌",
+        "source": "瑪竇福音 2:1–13",
+        "youtube": "https://www.youtube.com/watch?v=S7vKVL3Abq8",
+        "description": "透過 瑪竇福音 2:1–13，默觀降生與聖家奧蹟，在信賴、接納與日常忠實中學習回應天主。"
+      },
+      {
+        "day": 4,
+        "title": "聖家逃往埃及",
+        "source": "瑪竇福音 2:13–15",
+        "youtube": "https://www.youtube.com/watch?v=U-Jqfv-LvD8",
+        "description": "透過 瑪竇福音 2:13–15，默觀降生與聖家奧蹟，在信賴、接納與日常忠實中學習回應天主。"
+      },
+      {
+        "day": 5,
+        "title": "無罪嬰孩遭屠殺",
+        "source": "瑪竇福音 2:12–18",
+        "youtube": "https://www.youtube.com/watch?v=v8rDjE8iv90",
+        "description": "透過 瑪竇福音 2:12–18，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 6,
+        "title": "聖家回納匝肋",
+        "source": "瑪竇福音 2:19–23",
+        "youtube": "https://www.youtube.com/watch?v=gbVINQ4CWF8",
+        "description": "透過 瑪竇福音 2:19–23，默觀降生與聖家奧蹟，在信賴、接納與日常忠實中學習回應天主。"
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=pBgTIAWoeGA",
+        "description": "回顧本週「耶穌童年：若瑟、賢士與聖家」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 16,
+    "summary": "路加福音中的耶穌童年奧蹟",
+    "days": [
+      {
+        "day": 1,
+        "title": "路加福音中的兩項宣報",
+        "source": "路加福音 1:15–38",
+        "youtube": "https://www.youtube.com/watch?v=goqliUEhtT0",
+        "description": "透過 路加福音 1:15–38，以「路加福音中的兩項宣報」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "路加福音中的誕生",
+        "source": "路加福音 1:57–66、80；2:1–20",
+        "youtube": "https://www.youtube.com/watch?v=8G3aXqaWHUQ",
+        "description": "透過 路加福音 1:57–66、80；2:1–20，以「路加福音中的誕生」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "路加福音中的讚美詩",
+        "source": "路加福音 1:46–55、67–79；2:28–32",
+        "youtube": "https://www.youtube.com/watch?v=bO9Fgn3gZNc",
+        "description": "透過 路加福音 1:46–55、67–79；2:28–32，以「路加福音中的讚美詩」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "聖殿內的事件（1）",
+        "source": "路加福音 2:21–38",
+        "youtube": "https://www.youtube.com/watch?v=aHYny8TQ9Tw",
+        "description": "透過 路加福音 2:21–38，以「聖殿內的事件（1）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "聖殿內的事件（2）",
+        "source": "路加福音 2:41–50",
+        "youtube": "https://www.youtube.com/watch?v=4dAqv-cf8hI",
+        "description": "透過 路加福音 2:41–50，以「聖殿內的事件（2）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "耶穌的隱居生活",
+        "source": "路加福音 2:39–40、51–52",
+        "youtube": "https://www.youtube.com/watch?v=aXiuVitdFDw",
+        "description": "透過 路加福音 2:39–40、51–52，以「耶穌的隱居生活」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "複習前六天",
+        "youtube": "https://www.youtube.com/watch?v=Tzz9e7Tcivc",
+        "description": "回顧本週「路加福音中的耶穌童年奧蹟」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 17,
+    "summary": "兩旗、誘惑與基督的方法",
+    "days": [
+      {
+        "day": 1,
+        "title": "撒種的比喻",
+        "source": "馬爾谷福音 4:1–20",
+        "youtube": "https://www.youtube.com/watch?v=cgzf55o-cmM",
+        "description": "透過 馬爾谷福音 4:1–20，以「撒種的比喻」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "兩旗默想",
+        "source": "《神操》136–147",
+        "youtube": "https://www.youtube.com/watch?v=c2Yvln061Dg",
+        "description": "透過 《神操》136–147，辨認內外在的推動與選擇，學習朝向更自由、更真實、更符合福音的方向。"
+      },
+      {
+        "day": 3,
+        "title": "複習兩旗默想",
+        "source": "瑪竇福音 16:25",
+        "youtube": "https://www.youtube.com/watch?v=TXPMnBrtO2w",
+        "description": "回顧本週「兩旗、誘惑與基督的方法」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      },
+      {
+        "day": 4,
+        "title": "普遍的誘惑",
+        "source": "瑪竇福音 4:1–11",
+        "youtube": "https://www.youtube.com/watch?v=ESmPEUyZ3nA",
+        "description": "透過 瑪竇福音 4:1–11，辨認內外在的推動與選擇，學習朝向更自由、更真實、更符合福音的方向。"
+      },
+      {
+        "day": 5,
+        "title": "基督的方法",
+        "source": "瑪竇福音 3:13–17",
+        "youtube": "https://www.youtube.com/watch?v=Xb6EBJGC_V8",
+        "description": "透過 瑪竇福音 3:13–17，以「基督的方法」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "綜合：聖經的鳥瞰",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=cth4f1-TkN0",
+        "description": "以「綜合：聖經的鳥瞰」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "停、看、聽",
+        "source": "格林多後書 4",
+        "youtube": "https://www.youtube.com/watch?v=H2B6PxwnmBY",
+        "description": "透過 格林多後書 4，以「停、看、聽」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      }
+    ]
+  },
+  {
+    "week": 18,
+    "summary": "選擇、分辨與真正的愛",
+    "days": [
+      {
+        "day": 1,
+        "title": "瞻前顧後",
+        "source": "瑪竇福音 3:13–4:13",
+        "youtube": "https://www.youtube.com/watch?v=y1ta4DvMmBc",
+        "description": "透過 瑪竇福音 3:13–4:13，以「瞻前顧後」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "面對一個例子來反省",
+        "source": "《神操》149–157",
+        "youtube": "https://www.youtube.com/watch?v=l1xDqVbeeF4",
+        "description": "透過 《神操》149–157，以「面對一個例子來反省」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "聖經中的例子（1）",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=dD7ErWJpHdM",
+        "description": "以「聖經中的例子（1）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "聖經中的例子（2）",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=yGQ8np51Zzw",
+        "description": "以「聖經中的例子（2）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "真正的愛（1）",
+        "source": "《神操》164–168",
+        "youtube": "https://www.youtube.com/watch?v=zPco19iDzBM",
+        "description": "透過 《神操》164–168，從天主的愛出發，反省如何以更自由、真誠而具體的方式愛主愛人。"
+      },
+      {
+        "day": 6,
+        "title": "真正的愛（2）",
+        "source": "路加福音 16:10",
+        "youtube": "https://www.youtube.com/watch?v=NDZtqwxNnfE",
+        "description": "透過 路加福音 16:10，從天主的愛出發，反省如何以更自由、真誠而具體的方式愛主愛人。"
+      },
+      {
+        "day": 7,
+        "title": "停．看．聽",
+        "source": "斐理伯書 3",
+        "youtube": "https://www.youtube.com/watch?v=t2l7Qq0agEQ",
+        "description": "透過 斐理伯書 3，以「停．看．聽」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      }
+    ]
+  },
+  {
+    "week": 19,
+    "summary": "天國的訊息：山中聖訓",
+    "days": [
+      {
+        "day": 1,
+        "title": "默想往昔（1）",
+        "source": "聖詠 23",
+        "youtube": "https://www.youtube.com/watch?v=0ep4eUgS8wU",
+        "description": "透過 聖詠 23，以「默想往昔（1）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "默想往昔（2）",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=tgYQ8--PZ6s",
+        "description": "以「默想往昔（2）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "天國的訊息，山中聖訓（1）",
+        "source": "瑪竇福音 5:1–28",
+        "youtube": "https://www.youtube.com/watch?v=s975UISM-R4",
+        "description": "透過 瑪竇福音 5:1–28，從耶穌對天國的教導中反省價值、選擇與愛，並落實在日常生活。"
+      },
+      {
+        "day": 4,
+        "title": "天國的訊息，山中聖訓（2）：新正義",
+        "source": "瑪竇福音 5:17–48",
+        "youtube": "https://www.youtube.com/watch?v=TvBxOB7Plbk",
+        "description": "透過 瑪竇福音 5:17–48，從耶穌對天國的教導中反省價值、選擇與愛，並落實在日常生活。"
+      },
+      {
+        "day": 5,
+        "title": "天國的訊息，山中聖訓（3）：愛",
+        "source": "瑪竇福音 6:1–7:12",
+        "youtube": "https://www.youtube.com/watch?v=M6It8M5xeHk",
+        "description": "透過 瑪竇福音 6:1–7:12，從耶穌對天國的教導中反省價值、選擇與愛，並落實在日常生活。"
+      },
+      {
+        "day": 6,
+        "title": "天國的訊息，山中聖訓（4）：選擇真理",
+        "source": "瑪竇福音 7:13–23",
+        "youtube": "https://www.youtube.com/watch?v=d83Oqx_R2W0",
+        "description": "透過 瑪竇福音 7:13–23，從耶穌對天國的教導中反省價值、選擇與愛，並落實在日常生活。"
+      },
+      {
+        "day": 7,
+        "title": "天國的訊息，山中聖訓（5）：結論",
+        "source": "瑪竇福音 7:24–28",
+        "youtube": "https://www.youtube.com/watch?v=4RdNs1d3Jrg",
+        "description": "透過 瑪竇福音 7:24–28，從耶穌對天國的教導中反省價值、選擇與愛，並落實在日常生活。"
+      }
+    ]
+  },
+  {
+    "week": 20,
+    "summary": "天國的行動與門徒生活",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌擔負了我們的軟弱",
+        "source": "瑪竇福音 8:1–17",
+        "youtube": "https://www.youtube.com/watch?v=nOUWUTzi-Z0",
+        "description": "透過 瑪竇福音 8:1–17，以「耶穌擔負了我們的軟弱」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "邀請來追隨耶穌",
+        "source": "瑪竇福音 8:18–22",
+        "youtube": "https://www.youtube.com/watch?v=dSblUCFs-F0",
+        "description": "透過 瑪竇福音 8:18–22，以「邀請來追隨耶穌」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "耶穌有征服邪惡的能力",
+        "source": "瑪竇福音 8:23–9:8",
+        "youtube": "https://www.youtube.com/watch?v=CWXNoxEJV5A",
+        "description": "透過 瑪竇福音 8:23–9:8，以「耶穌有征服邪惡的能力」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "耶穌有轉變人的能力",
+        "source": "瑪竇福音 9:9–17",
+        "youtube": "https://www.youtube.com/watch?v=Tp3JMzRPHTM",
+        "description": "透過 瑪竇福音 9:9–17，以「耶穌有轉變人的能力」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "耶穌是門徒的新生活",
+        "source": "瑪竇福音 9:18–34",
+        "youtube": "https://www.youtube.com/watch?v=X9K_iYYz_q8",
+        "description": "透過 瑪竇福音 9:18–34，以「耶穌是門徒的新生活」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "耶穌是天國的記號",
+        "source": "瑪竇福音 9:35–38",
+        "youtube": "https://www.youtube.com/watch?v=dMFNT0-btL8",
+        "description": "透過 瑪竇福音 9:35–38，從耶穌對天國的教導中反省價值、選擇與愛，並落實在日常生活。"
+      },
+      {
+        "day": 7,
+        "title": "天國的計畫",
+        "source": "瑪竇福音 8–9",
+        "youtube": "https://www.youtube.com/watch?v=8m3YDyJ_Bas",
+        "description": "透過 瑪竇福音 8–9，從耶穌對天國的教導中反省價值、選擇與愛，並落實在日常生活。"
+      }
+    ]
+  },
+  {
+    "week": 21,
+    "summary": "若望福音中的耶穌記號",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌是新時代的開始",
+        "source": "若望福音 2:1–11",
+        "youtube": "https://www.youtube.com/watch?v=OoY-t6BSn7A",
+        "description": "透過 若望福音 2:1–11，以「耶穌是新時代的開始」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "耶穌是信仰的開始，這信仰帶給人新的生命",
+        "source": "若望福音 4:43–54",
+        "youtube": "https://www.youtube.com/watch?v=q4hVoH5Hg6o",
+        "description": "透過 若望福音 4:43–54，以「耶穌是信仰的開始，這信仰帶給人新的生命」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "耶穌把我們從癱瘓中釋放出來",
+        "source": "若望福音 5:1–18、19–47",
+        "youtube": "https://www.youtube.com/watch?v=9ZYyicAh44I",
+        "description": "透過 若望福音 5:1–18、19–47，以「耶穌把我們從癱瘓中釋放出來」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "耶穌是我們生命的食糧",
+        "source": "若望福音 6:1–15",
+        "youtube": "https://www.youtube.com/watch?v=NI4STcaxFnM",
+        "description": "透過 若望福音 6:1–15，以「耶穌是我們生命的食糧」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "耶穌是我們生活中天主的能力",
+        "source": "若望福音 6:16–21、22–71",
+        "youtube": "https://www.youtube.com/watch?v=KRxQJqToges",
+        "description": "透過 若望福音 6:16–21、22–71，以「耶穌是我們生活中天主的能力」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "耶穌是世界之光",
+        "source": "若望福音 9:1–41",
+        "youtube": "https://www.youtube.com/watch?v=GOjbsUiENec",
+        "description": "透過 若望福音 9:1–41，以「耶穌是世界之光」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "耶穌是我們的生命和復活",
+        "source": "若望福音 11:1–57",
+        "youtube": "https://www.youtube.com/watch?v=osWUpz-Ypbg",
+        "description": "透過 若望福音 11:1–57，默觀復活基督的臨在與相遇，從恐懼和疑惑走向希望、平安與見證。"
+      }
+    ]
+  },
+  {
+    "week": 22,
+    "summary": "使命、召叫與福音的執事",
+    "days": [
+      {
+        "day": 1,
+        "title": "莊稼多",
+        "source": "瑪竇福音 9:35–38",
+        "youtube": "https://www.youtube.com/watch?v=ePqOAzgnPYc",
+        "description": "透過 瑪竇福音 9:35–38，以「莊稼多」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "使徒性責任的召叫",
+        "source": "若望福音 4:31–38",
+        "youtube": "https://www.youtube.com/watch?v=4F_UFgz9fcI",
+        "description": "透過 若望福音 4:31–38，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 3,
+        "title": "使命（1）：揀選",
+        "source": "瑪竇福音 10:1–5",
+        "youtube": "https://www.youtube.com/watch?v=FNGYgX4WCZo",
+        "description": "透過 瑪竇福音 10:1–5，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 4,
+        "title": "使命（2）",
+        "source": "瑪竇福音 10:5–42",
+        "youtube": "https://www.youtube.com/watch?v=IOExX68U6T8",
+        "description": "透過 瑪竇福音 10:5–42，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 5,
+        "title": "善牧",
+        "source": "若望福音 9:40–10:21",
+        "youtube": "https://www.youtube.com/watch?v=2U-tgLA12g8",
+        "description": "透過 若望福音 9:40–10:21，以「善牧」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "福音的執事",
+        "source": "格林多後書 3–6",
+        "youtube": "https://www.youtube.com/watch?v=leeUUvIw4Tc",
+        "description": "透過 格林多後書 3–6，以「福音的執事」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "Week 22 複習",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=fxJNX1QX7YM",
+        "description": "回顧本週「使命、召叫與福音的執事」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 23,
+    "summary": "資料待補",
+    "days": [
+      {
+        "day": 1,
+        "title": "",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=-z0W9QpNJ3U",
+        "description": ""
+      },
+      {
+        "day": 2,
+        "title": "",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=q48qOORGEBA",
+        "description": ""
+      },
+      {
+        "day": 3,
+        "title": "",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=qsS3EHqy958",
+        "description": ""
+      },
+      {
+        "day": 4,
+        "title": "",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=LnlMpenrmsc",
+        "description": ""
+      },
+      {
+        "day": 5,
+        "title": "",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=Qzbh8XvWXIc",
+        "description": ""
+      },
+      {
+        "day": 6,
+        "title": "",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=L3hf1qK77ks",
+        "description": ""
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=qr0ejCqg6kI",
+        "description": "回顧本週「資料待補」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 24,
+    "summary": "宗徒蒙召與天國團體",
+    "days": [
+      {
+        "day": 1,
+        "title": "宗徒們的蒙召",
+        "source": "《神操》275",
+        "youtube": "https://www.youtube.com/watch?v=C7pHfI2V6OM",
+        "description": "透過 《神操》275，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 2,
+        "title": "伯多祿的蒙召",
+        "source": "路加福音 5:1–11",
+        "youtube": "https://www.youtube.com/watch?v=3OlzsiCrnk0",
+        "description": "透過 路加福音 5:1–11，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 3,
+        "title": "面對基督奧蹟的記號",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=aPXaZeFASMo",
+        "description": "以「面對基督奧蹟的記號」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "天國的團體（1）",
+        "source": "瑪竇福音 15:32–39",
+        "youtube": "https://www.youtube.com/watch?v=_ytvhXxbbLg",
+        "description": "透過 瑪竇福音 15:32–39，從耶穌對天國的教導中反省價值、選擇與愛，並落實在日常生活。"
+      },
+      {
+        "day": 5,
+        "title": "天國的團體（2）",
+        "source": "瑪竇福音 17–18",
+        "youtube": "https://www.youtube.com/watch?v=UmLVcDxKkJ4",
+        "description": "透過 瑪竇福音 17–18，從耶穌對天國的教導中反省價值、選擇與愛，並落實在日常生活。"
+      },
+      {
+        "day": 6,
+        "title": "天國的團體（3）",
+        "source": "羅馬書 12",
+        "youtube": "https://www.youtube.com/watch?v=1qQbtTxht9k",
+        "description": "透過 羅馬書 12，從耶穌對天國的教導中反省價值、選擇與愛，並落實在日常生活。"
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=W2r_3NbctZM",
+        "description": "回顧本週「宗徒蒙召與天國團體」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 25,
+    "summary": "在耶路撒冷的最後幾天",
+    "days": [
+      {
+        "day": 1,
+        "title": "在耶路撒冷的最後幾天（1）",
+        "source": "若望福音 12",
+        "youtube": "https://www.youtube.com/watch?v=tTI2yzptTgA",
+        "description": "透過 若望福音 12，以「在耶路撒冷的最後幾天（1）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 2,
+        "title": "在耶路撒冷的最後幾天（2）",
+        "source": "若望福音 12",
+        "youtube": "https://www.youtube.com/watch?v=IiqzFl0k4ns",
+        "description": "透過 若望福音 12，以「在耶路撒冷的最後幾天（2）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "在耶路撒冷的最後幾天（3）",
+        "source": "若望福音 12 後段",
+        "youtube": "https://www.youtube.com/watch?v=N_dU7Vd9noM",
+        "description": "透過 若望福音 12 後段，以「在耶路撒冷的最後幾天（3）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "在耶路撒冷的最後幾天（4）",
+        "source": "瑪竇福音 21–22",
+        "youtube": "https://www.youtube.com/watch?v=aAzY3aORzDc",
+        "description": "透過 瑪竇福音 21–22，以「在耶路撒冷的最後幾天（4）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "在耶路撒冷的最後幾天（5）",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=FbWLTif2xDc",
+        "description": "以「在耶路撒冷的最後幾天（5）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "在耶路撒冷的最後幾天（6）",
+        "source": "瑪竇福音 23",
+        "youtube": "https://www.youtube.com/watch?v=O0GGie1cVyQ",
+        "description": "透過 瑪竇福音 23，以「在耶路撒冷的最後幾天（6）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "在耶路撒冷的最後幾天——複習",
+        "source": "複習若望福音 12；瑪竇福音 21–23",
+        "youtube": "https://www.youtube.com/watch?v=l8P3o-2ZvzM",
+        "description": "回顧本週「在耶路撒冷的最後幾天」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 26,
+    "summary": "最後晚餐、聖體與臨別贈言",
+    "days": [
+      {
+        "day": 1,
+        "title": "基督以何出發點來過祂的苦難",
+        "source": "若望福音 13:1–5",
+        "youtube": "https://www.youtube.com/watch?v=_P6SKmEThPQ",
+        "description": "透過 若望福音 13:1–5，陪伴耶穌走過苦難，在十字架的愛中反省忠信、交託與生命的回應。"
+      },
+      {
+        "day": 2,
+        "title": "耶穌給門徒們洗腳",
+        "source": "若望福音 13:1–20",
+        "youtube": "https://www.youtube.com/watch?v=0MroTlq6ZkQ",
+        "description": "透過 若望福音 13:1–20，從耶穌的自我交付與服務中，體會愛如何成為分享、共融與具體行動。"
+      },
+      {
+        "day": 3,
+        "title": "基督聖體（1）",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=_wLwRb6xCBo",
+        "description": "從耶穌的自我交付與服務中，體會愛如何成為分享、共融與具體行動。"
+      },
+      {
+        "day": 4,
+        "title": "基督聖體（2）",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=UJl8yHYQG_k",
+        "description": "從耶穌的自我交付與服務中，體會愛如何成為分享、共融與具體行動。"
+      },
+      {
+        "day": 5,
+        "title": "耶穌的臨別贈言",
+        "source": "若望福音 13–17",
+        "youtube": "https://www.youtube.com/watch?v=YvXHCQhYWwE",
+        "description": "透過 若望福音 13–17，以「耶穌的臨別贈言」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "耶穌的臨別贈言（二）",
+        "source": "若望福音 14–16",
+        "youtube": "https://www.youtube.com/watch?v=E1z_XJl8Ybg",
+        "description": "透過 若望福音 14–16，以「耶穌的臨別贈言（二）」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "複習 Week 26",
+        "source": "若望福音 13–17",
+        "youtube": "https://www.youtube.com/watch?v=cAvUhbvaXAU",
+        "description": "回顧本週「最後晚餐、聖體與臨別贈言」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 27,
+    "summary": "苦悶的山園祈禱",
+    "days": [
+      {
+        "day": 1,
+        "title": "苦悶的山園祈禱（一）",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=Lc0Up9c1w4Y",
+        "description": "學習在祈禱中聆聽、停留與分辨，使與天主的關係更真實。"
+      },
+      {
+        "day": 2,
+        "title": "苦悶的山園祈禱（二）",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=EPrLZChsKBM",
+        "description": "學習在祈禱中聆聽、停留與分辨，使與天主的關係更真實。"
+      },
+      {
+        "day": 3,
+        "title": "苦悶的山園祈禱（三）",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=6MOgN-g9r5A",
+        "description": "學習在祈禱中聆聽、停留與分辨，使與天主的關係更真實。"
+      },
+      {
+        "day": 4,
+        "title": "苦悶的山園祈禱（四）",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=ArbxTcTBBwg",
+        "description": "學習在祈禱中聆聽、停留與分辨，使與天主的關係更真實。"
+      },
+      {
+        "day": 5,
+        "title": "苦悶的山園祈禱（五）",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=ECAnhtxboiM",
+        "description": "學習在祈禱中聆聽、停留與分辨，使與天主的關係更真實。"
+      },
+      {
+        "day": 6,
+        "title": "苦悶的山園祈禱（六）",
+        "source": "馬爾谷福音 14:50",
+        "youtube": "https://www.youtube.com/watch?v=eJ1_-Tfxrjw",
+        "description": "透過 馬爾谷福音 14:50，學習在祈禱中聆聽、停留與分辨，使與天主的關係更真實。"
+      },
+      {
+        "day": 7,
+        "title": "複習 Week 27 Day 1–Day 6",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=deGfwpTytvo",
+        "description": "回顧本週「苦悶的山園祈禱」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 28,
+    "summary": "被捕、受審與苦路",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌被捕",
+        "source": "瑪竇福音 26:47–56",
+        "youtube": "https://www.youtube.com/watch?v=EwTfXZnbnmk",
+        "description": "透過 瑪竇福音 26:47–56，陪伴耶穌走過苦難，在十字架的愛中反省忠信、交託與生命的回應。"
+      },
+      {
+        "day": 2,
+        "title": "耶穌在公議會受審",
+        "source": "瑪竇福音 26:57–68；27:1–2",
+        "youtube": "https://www.youtube.com/watch?v=GXP5wVn_VLs",
+        "description": "透過 瑪竇福音 26:57–68；27:1–2，陪伴耶穌走過苦難，在十字架的愛中反省忠信、交託與生命的回應。"
+      },
+      {
+        "day": 3,
+        "title": "伯多祿否認耶穌",
+        "source": "馬爾谷福音 14:66–72",
+        "youtube": "https://www.youtube.com/watch?v=rpgeOJ3Apwg",
+        "description": "透過 馬爾谷福音 14:66–72，以「伯多祿否認耶穌」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "耶穌在比拉多前受審",
+        "source": "馬爾谷福音 15:1–20",
+        "youtube": "https://www.youtube.com/watch?v=iQsEbrdIKnI",
+        "description": "透過 馬爾谷福音 15:1–20，陪伴耶穌走過苦難，在十字架的愛中反省忠信、交託與生命的回應。"
+      },
+      {
+        "day": 5,
+        "title": "耶穌在黑落德前受審",
+        "source": "路加福音 23:6–12",
+        "youtube": "https://www.youtube.com/watch?v=X2K3-QPq-k4",
+        "description": "透過 路加福音 23:6–12，陪伴耶穌走過苦難，在十字架的愛中反省忠信、交託與生命的回應。"
+      },
+      {
+        "day": 6,
+        "title": "苦路與耶穌被釘在十字架上",
+        "source": "馬爾谷福音 15:20–32",
+        "youtube": "https://www.youtube.com/watch?v=uG4HrHgY6bc",
+        "description": "透過 馬爾谷福音 15:20–32，陪伴耶穌走過苦難，在十字架的愛中反省忠信、交託與生命的回應。"
+      },
+      {
+        "day": 7,
+        "title": "複習：拜苦路，在耶穌的痛苦中陪伴祂",
+        "source": "複習 Day 1–6",
+        "youtube": "https://www.youtube.com/watch?v=TsvijmoIYEU",
+        "description": "回顧本週「被捕、受審與苦路」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 29,
+    "summary": "十字架上的七句話",
+    "days": [
+      {
+        "day": 1,
+        "title": "臨終贈言第一句：寬恕的愛",
+        "source": "路加福音 23:34",
+        "youtube": "https://www.youtube.com/watch?v=i3KomMZfwPY",
+        "description": "透過 路加福音 23:34，誠實面對人的軟弱與罪，並在天主的仁慈中走向悔改、寬恕與更新。"
+      },
+      {
+        "day": 2,
+        "title": "今天與主同在樂園",
+        "source": "路加福音 23:43",
+        "youtube": "https://www.youtube.com/watch?v=D-cmrd2E0AY",
+        "description": "透過 路加福音 23:43，以「今天與主同在樂園」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "在十字架下成為新的家人",
+        "source": "若望福音 19:25–27",
+        "youtube": "https://www.youtube.com/watch?v=-G-i0VHxcxI",
+        "description": "透過 若望福音 19:25–27，陪伴耶穌走過苦難，在十字架的愛中反省忠信、交託與生命的回應。"
+      },
+      {
+        "day": 4,
+        "title": "在黑暗中仍呼喚天主",
+        "source": "馬爾谷福音 15:33–36",
+        "youtube": "https://www.youtube.com/watch?v=TBXLf60WivE",
+        "description": "透過 馬爾谷福音 15:33–36，以「在黑暗中仍呼喚天主」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "我渴",
+        "source": "若望福音 19:28–29",
+        "youtube": "https://www.youtube.com/watch?v=3zXCsxjn5L4",
+        "description": "透過 若望福音 19:28–29，以「我渴」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "完成了",
+        "source": "若望福音 19:30",
+        "youtube": "https://www.youtube.com/watch?v=3X8wBDEUdh8",
+        "description": "透過 若望福音 19:30，以「完成了」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "把生命交託在父手中",
+        "source": "路加福音 23:45–46",
+        "youtube": "https://www.youtube.com/watch?v=pc2iwLa4VSU",
+        "description": "透過 路加福音 23:45–46，以「把生命交託在父手中」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      }
+    ]
+  },
+  {
+    "week": 30,
+    "summary": "十字架、安葬與守候復活",
+    "days": [
+      {
+        "day": 1,
+        "title": "以十字架的瞭望台為出發點",
+        "source": "《神操》208–209",
+        "youtube": "https://www.youtube.com/watch?v=zyMOvxBMMjA",
+        "description": "透過 《神操》208–209，陪伴耶穌走過苦難，在十字架的愛中反省忠信、交託與生命的回應。"
+      },
+      {
+        "day": 2,
+        "title": "奧蹟的意義",
+        "source": "斐理伯書 2:5–11；格林多前書 1:18–31；希伯來書 5:1–10、10:5–10",
+        "youtube": "https://www.youtube.com/watch?v=39s757ao23U",
+        "description": "透過 斐理伯書 2:5–11；格林多前書 1:18–31；希伯來書 5:1–10、10:5–10，以「奧蹟的意義」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "面對我的苦像",
+        "source": "哥羅森書 1:24",
+        "youtube": "https://www.youtube.com/watch?v=4FlVe6298GA",
+        "description": "透過 哥羅森書 1:24，以「面對我的苦像」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "耶穌被刺透的心",
+        "source": "若望福音 19:31–37",
+        "youtube": "https://www.youtube.com/watch?v=NiZcWbeMtUE",
+        "description": "透過 若望福音 19:31–37，以「耶穌被刺透的心」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 5,
+        "title": "安葬：在沉默與封石中守候",
+        "source": "若望福音 19:38–42；瑪竇福音 27:57–61；馬爾谷福音 15:42–47；路加福音 23:50–56",
+        "youtube": "https://www.youtube.com/watch?v=5ZJKTwfI1U4",
+        "description": "透過 若望福音 19:38–42；瑪竇福音 27:57–61；馬爾谷福音 15:42–47；路加福音 23:50–56，在有限、失落與死亡的奧祕前，以信德凝視生命並學習交託與盼望。"
+      },
+      {
+        "day": 6,
+        "title": "瑪利亞等待耶穌復活時的孤獨與寂寞",
+        "source": "《神操》93（另參復活默觀 218–225、299）",
+        "youtube": "https://www.youtube.com/watch?v=TQCJbnglPOc",
+        "description": "透過 《神操》93（另參復活默觀 218–225、299），默觀復活基督的臨在與相遇，從恐懼和疑惑走向希望、平安與見證。"
+      },
+      {
+        "day": 7,
+        "title": "複習：站在十字架前，回顧主的愛與我的回應",
+        "source": "《神操》53",
+        "youtube": "https://www.youtube.com/watch?v=GdVZBFAGgik",
+        "description": "回顧本週「十字架、安葬與守候復活」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 31,
+    "summary": "復活的主顯現與同行",
+    "days": [
+      {
+        "day": 1,
+        "title": "真情地參與耶穌的復活：耶穌顯現給婦女",
+        "source": "瑪竇福音 28:1–10",
+        "youtube": "https://www.youtube.com/watch?v=PcbpVerpIrg",
+        "description": "透過 瑪竇福音 28:1–10，默觀復活基督的臨在與相遇，從恐懼和疑惑走向希望、平安與見證。"
+      },
+      {
+        "day": 2,
+        "title": "尋求主基督復活的訊號",
+        "source": "若望福音 20:1–10",
+        "youtube": "https://www.youtube.com/watch?v=apdOW0NlPp0",
+        "description": "透過 若望福音 20:1–10，默觀復活基督的臨在與相遇，從恐懼和疑惑走向希望、平安與見證。"
+      },
+      {
+        "day": 3,
+        "title": "瑪達肋納漸漸認出耶穌",
+        "source": "若望福音 20:11–18",
+        "youtube": "https://www.youtube.com/watch?v=UwBWoiXaSmE",
+        "description": "透過 若望福音 20:11–18，以「瑪達肋納漸漸認出耶穌」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 4,
+        "title": "耶穌顯現給厄瑪烏的門徒（1）",
+        "source": "路加福音 24:13–35",
+        "youtube": "https://www.youtube.com/watch?v=pc6T7gQYDps",
+        "description": "透過 路加福音 24:13–35，默觀復活基督的臨在與相遇，從恐懼和疑惑走向希望、平安與見證。"
+      },
+      {
+        "day": 5,
+        "title": "耶穌顯現給厄瑪烏的門徒（2）",
+        "source": "若望福音 14:23；宗徒大事錄 2:42",
+        "youtube": "https://www.youtube.com/watch?v=8Pqjrp-zVpY",
+        "description": "透過 若望福音 14:23；宗徒大事錄 2:42，默觀復活基督的臨在與相遇，從恐懼和疑惑走向希望、平安與見證。"
+      },
+      {
+        "day": 6,
+        "title": "你們為什麼恐惶？……是我自己",
+        "source": "路加福音 24:36–47",
+        "youtube": "https://www.youtube.com/watch?v=Iz8sAKi63gQ",
+        "description": "透過 路加福音 24:36–47，以「你們為什麼恐惶？……是我自己」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "複習：從空墳墓到升天祝福",
+        "source": "路加福音 24",
+        "youtube": "https://www.youtube.com/watch?v=s_drUBY7lzs",
+        "description": "回顧本週「復活的主顯現與同行」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 32,
+    "summary": "復活基督與友愛團體",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌顯現給祂的母親",
+        "source": "《神操》299；若望福音 14:19",
+        "youtube": "https://www.youtube.com/watch?v=BHHgsZCWQ14",
+        "description": "透過 《神操》299；若望福音 14:19，默觀復活基督的臨在與相遇，從恐懼和疑惑走向希望、平安與見證。"
+      },
+      {
+        "day": 2,
+        "title": "耶穌在祂的朋友中間",
+        "source": "若望福音 20:19–29",
+        "youtube": "https://www.youtube.com/watch?v=SdquVWN55Do",
+        "description": "透過 若望福音 20:19–29，以「耶穌在祂的朋友中間」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 3,
+        "title": "耶穌活在友愛的團體內",
+        "source": "若望福音 21",
+        "youtube": "https://www.youtube.com/watch?v=TSNi_sXbM28",
+        "description": "透過 若望福音 21，從天主的愛出發，反省如何以更自由、真誠而具體的方式愛主愛人。"
+      },
+      {
+        "day": 4,
+        "title": "耶穌活在友愛的團體內（2）",
+        "source": "若望福音 21",
+        "youtube": "https://www.youtube.com/watch?v=utstbX5l9pc",
+        "description": "透過 若望福音 21，從天主的愛出發，反省如何以更自由、真誠而具體的方式愛主愛人。"
+      },
+      {
+        "day": 5,
+        "title": "我同你們天天在一起",
+        "source": "瑪竇福音 28:20",
+        "youtube": "https://www.youtube.com/watch?v=BApAhL8ld1c",
+        "description": "透過 瑪竇福音 28:20，以「我同你們天天在一起」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 6,
+        "title": "耶穌臨在於祂的教會內",
+        "source": "宗徒大事錄 1:1–11",
+        "youtube": "https://www.youtube.com/watch?v=MDOpoORaEdg",
+        "description": "透過 宗徒大事錄 1:1–11，以「耶穌臨在於祂的教會內」為當日默想核心，連結祈禱、省察與生活實踐，分辨天主今日的邀請。"
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "《神操》299；若 14:19；若 20:19–29；若 21；瑪 28:20；宗 1:1–11",
+        "youtube": "https://www.youtube.com/watch?v=QKekl7bVHcY",
+        "description": "回顧本週「復活基督與友愛團體」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 33,
+    "summary": "聖神、派遣與使命",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌派遣聖神和門徒們",
+        "source": "若望福音 20:19–23",
+        "youtube": "https://www.youtube.com/watch?v=F6AXXaEYsBI",
+        "description": "透過 若望福音 20:19–23，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 2,
+        "title": "耶穌派遣門徒（1）",
+        "source": "瑪竇福音 28:19–20",
+        "youtube": "https://www.youtube.com/watch?v=KxWd8JAKji8",
+        "description": "透過 瑪竇福音 28:19–20，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 3,
+        "title": "耶穌派遣門徒（2）",
+        "source": "路加福音 24:45–53；宗徒大事錄 1:1–11",
+        "youtube": "https://www.youtube.com/watch?v=niD_I0SL3kY",
+        "description": "透過 路加福音 24:45–53；宗徒大事錄 1:1–11，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 4,
+        "title": "派遣聖神",
+        "source": "宗徒大事錄 2",
+        "youtube": "https://www.youtube.com/watch?v=Y-vGJ_17V2Q",
+        "description": "透過 宗徒大事錄 2，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 5,
+        "title": "耶穌顯現給保祿",
+        "source": "格林多前書 15:8",
+        "youtube": "https://www.youtube.com/watch?v=LixUbKHyKwA",
+        "description": "透過 格林多前書 15:8，默觀復活基督的臨在與相遇，從恐懼和疑惑走向希望、平安與見證。"
+      },
+      {
+        "day": 6,
+        "title": "派遣保祿",
+        "source": "宗徒大事錄 13:2",
+        "youtube": "https://www.youtube.com/watch?v=emcR2fwF1PQ",
+        "description": "透過 宗徒大事錄 13:2，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "複習 Day 1–6",
+        "youtube": "https://www.youtube.com/watch?v=3orC58iUdfk",
+        "description": "回顧本週「聖神、派遣與使命」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 34,
+    "summary": "聖神內的生活與神恩",
+    "days": [
+      {
+        "day": 1,
+        "title": "耶穌顯現給他人",
+        "source": "《神操》第四週復活顯現精神",
+        "youtube": "https://www.youtube.com/watch?v=VijMqF6LhdY",
+        "description": "透過 《神操》第四週復活顯現精神，默觀復活基督的臨在與相遇，從恐懼和疑惑走向希望、平安與見證。"
+      },
+      {
+        "day": 2,
+        "title": "耶穌派遣他人",
+        "source": "依撒意亞 6:8",
+        "youtube": "https://www.youtube.com/watch?v=JmDdXEhZKN0",
+        "description": "透過 依撒意亞 6:8，聆聽天主的召叫，分辨自己的回應，並把所領受的恩寵化為使命與服務。"
+      },
+      {
+        "day": 3,
+        "title": "順服於聖神的生活",
+        "source": "羅馬書 8",
+        "youtube": "https://www.youtube.com/watch?v=hi4UxlyN5Yc",
+        "description": "透過 羅馬書 8，在聖神內辨認生命的推動與恩賜，學習以自由和愛回應天主。"
+      },
+      {
+        "day": 4,
+        "title": "聖神的果實",
+        "source": "迦拉達書 5:22–6:10",
+        "youtube": "https://www.youtube.com/watch?v=jyzYNeccLF0",
+        "description": "透過 迦拉達書 5:22–6:10，在聖神內辨認生命的推動與恩賜，學習以自由和愛回應天主。"
+      },
+      {
+        "day": 5,
+        "title": "同一聖神的不同神恩",
+        "source": "格林多前書 12",
+        "youtube": "https://www.youtube.com/watch?v=8_DVu_ExUTU",
+        "description": "透過 格林多前書 12，在聖神內辨認生命的推動與恩賜，學習以自由和愛回應天主。"
+      },
+      {
+        "day": 6,
+        "title": "友愛的神恩",
+        "source": "格林多前書 13",
+        "youtube": "https://www.youtube.com/watch?v=gwhO1sPwTvc",
+        "description": "透過 格林多前書 13，在聖神內辨認生命的推動與恩賜，學習以自由和愛回應天主。"
+      },
+      {
+        "day": 7,
+        "title": "複習",
+        "source": "複習 Day 1–6",
+        "youtube": "https://www.youtube.com/watch?v=kz3XyOJ-Fl8",
+        "description": "回顧本週「聖神內的生活與神恩」的祈禱與領受，整理最深的感動、分辨與可實踐的生活回應。"
+      }
+    ]
+  },
+  {
+    "week": 35,
+    "summary": "獲得愛情的默觀與在一切事情上尋求並找到天主",
+    "days": [
+      {
+        "day": 1,
+        "title": "獲得愛情的默觀－第一端",
+        "source": "《神操》234",
+        "youtube": "https://www.youtube.com/watch?v=q3GljUWfayA",
+        "description": "透過 《神操》234，在天主的恩賜、臨在與工作中體會祂的愛，並以感恩、奉獻與服務回應。"
+      },
+      {
+        "day": 2,
+        "title": "獲得愛情的默觀－第二端",
+        "source": "《神操》235",
+        "youtube": "https://www.youtube.com/watch?v=VKnnNwZrld4",
+        "description": "透過 《神操》235，在天主的恩賜、臨在與工作中體會祂的愛，並以感恩、奉獻與服務回應。"
+      },
+      {
+        "day": 3,
+        "title": "獲得愛情的默觀－第三端",
+        "source": "《神操》236",
+        "youtube": "https://www.youtube.com/watch?v=fKqVEC0dgAw",
+        "description": "透過 《神操》236，在天主的恩賜、臨在與工作中體會祂的愛，並以感恩、奉獻與服務回應。"
+      },
+      {
+        "day": 4,
+        "title": "獲得愛情的默觀－第四端",
+        "source": "《神操》237",
+        "youtube": "https://www.youtube.com/watch?v=C4_TSw_fW9M",
+        "description": "透過 《神操》237，在天主的恩賜、臨在與工作中體會祂的愛，並以感恩、奉獻與服務回應。"
+      },
+      {
+        "day": 5,
+        "title": "獲得愛情的默觀－總結",
+        "source": "綜整《神操》234–237",
+        "youtube": "https://www.youtube.com/watch?v=iSde4wdnPG4",
+        "description": "透過 綜整《神操》234–237，在天主的恩賜、臨在與工作中體會祂的愛，並以感恩、奉獻與服務回應。"
+      },
+      {
+        "day": 6,
+        "title": "在一切事情上尋求並找到天主",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=tHmTAnZXbjY",
+        "description": "在日常經驗中覺察天主的臨在，並以祈禱與生活回應祂。"
+      }
+    ]
+  }
+];
+
+
+/* YouTube links verified through vidIQ, user confirmation, and YouTube Studio CSV export. W11-W14 remain blank because no matching uploads appear in the provided export. */
+const DEFAULT_YOUTUBE_LINKS = {
+  "w1d1": "https://www.youtube.com/watch?v=9gwHWHn3wc8",
+  "w1d2": "https://www.youtube.com/watch?v=5HCymMuv00A",
+  "w1d3": "https://www.youtube.com/watch?v=pqPbYS38Pfo",
+  "w1d4": "https://www.youtube.com/watch?v=3EHEIvrVsnQ",
+  "w1d5": "https://www.youtube.com/watch?v=vLf3l77uF6w",
+  "w1d6": "https://www.youtube.com/watch?v=9ldjAuvrMIc",
+  "w1d7": "https://www.youtube.com/watch?v=rGgXqWmKfjk",
+  "w2d1": "https://www.youtube.com/watch?v=MJbYZ2INApk",
+  "w2d2": "https://www.youtube.com/watch?v=A-Ik52LqooQ",
+  "w2d3": "https://www.youtube.com/watch?v=krWEMYX3Vk4",
+  "w2d4": "https://www.youtube.com/watch?v=lOEEeYCPv-w",
+  "w2d5": "https://www.youtube.com/watch?v=IRCBF_ugfo8",
+  "w2d6": "https://www.youtube.com/watch?v=Y-Kcczj91gg",
+  "w2d7": "https://www.youtube.com/watch?v=YKDc8gw-8i8",
+  "w3d1": "https://www.youtube.com/watch?v=UaamWJujfDM",
+  "w3d2": "https://www.youtube.com/watch?v=202U6C4ULzg",
+  "w3d3": "https://www.youtube.com/watch?v=hCOi4W-hbJA",
+  "w3d4": "https://www.youtube.com/watch?v=wdrJFCCfQeE",
+  "w3d5": "https://www.youtube.com/watch?v=Ji6pzvZpJyk",
+  "w3d6": "https://www.youtube.com/watch?v=oD3lOtgYe40",
+  "w3d7": "https://www.youtube.com/watch?v=U9HFQr7kBcw",
+  "w4d1": "https://www.youtube.com/watch?v=8sjqJZPj4K0",
+  "w4d2": "https://www.youtube.com/watch?v=sdzkq1tMCCA",
+  "w4d3": "https://www.youtube.com/watch?v=50Eugt1Ana8",
+  "w4d4": "https://www.youtube.com/watch?v=j8w9uyPAuw8",
+  "w4d5": "https://www.youtube.com/watch?v=5TkHUiFo3xk",
+  "w4d6": "https://www.youtube.com/watch?v=rO4TpZxZFpI",
+  "w4d7": "https://www.youtube.com/watch?v=ZunR_BY5CDI",
+  "w5d1": "https://www.youtube.com/watch?v=WxRuJEn87n0",
+  "w5d2": "https://www.youtube.com/watch?v=EWBxr083S0Y",
+  "w5d3": "https://www.youtube.com/watch?v=jbI2CSsIUEA",
+  "w5d4": "https://www.youtube.com/watch?v=3swYaxeS32E",
+  "w5d5": "https://www.youtube.com/watch?v=diTfc2-YMYg",
+  "w5d6": "https://www.youtube.com/watch?v=OsBb-IK8INM",
+  "w5d7": "https://www.youtube.com/watch?v=cys55DMQAlg",
+  "w6d1": "https://www.youtube.com/watch?v=gM5mK3IN2Dg",
+  "w6d2": "https://www.youtube.com/watch?v=PMi_Lx8AiEo",
+  "w6d3": "https://www.youtube.com/watch?v=7gLAOAok2oM",
+  "w6d4": "https://www.youtube.com/watch?v=8g8CrtQzMBo",
+  "w6d5": "https://www.youtube.com/watch?v=DtpEeXFemv8",
+  "w6d6": "https://www.youtube.com/watch?v=qmTd9ZARKqE",
+  "w6d7": "https://www.youtube.com/watch?v=7yY6ML-D-9M",
+  "w7d1": "https://www.youtube.com/watch?v=A0cmS28uVb4",
+  "w7d2": "https://www.youtube.com/watch?v=OedC54GFQvs",
+  "w7d3": "https://www.youtube.com/watch?v=uwz_AJFEAYc",
+  "w7d4": "https://www.youtube.com/watch?v=ta3RsbiB6gA",
+  "w7d5": "https://www.youtube.com/watch?v=LhkvV9wwxPs",
+  "w7d6": "https://www.youtube.com/watch?v=zkMponYagZ0",
+  "w7d7": "https://www.youtube.com/watch?v=7El3iYd7Zhk",
+  "w8d1": "https://www.youtube.com/watch?v=z7jdpmdzEoI",
+  "w8d2": "https://www.youtube.com/watch?v=hT3UphdSkiM",
+  "w8d3": "https://www.youtube.com/watch?v=WuIjLZXZWns",
+  "w8d4": "https://www.youtube.com/watch?v=7rbhFzT-x6k",
+  "w8d5": "https://www.youtube.com/watch?v=N36_s5nxa5E",
+  "w8d6": "https://www.youtube.com/watch?v=d6SV4KlHOOM",
+  "w8d7": "https://www.youtube.com/watch?v=L9hEZFBLd6w",
+  "w9d1": "https://www.youtube.com/watch?v=AI9J44iS9aM",
+  "w9d2": "https://www.youtube.com/watch?v=iiJaFZJib6Q",
+  "w9d3": "https://www.youtube.com/watch?v=i1_AJPh-kR0",
+  "w9d4": "https://www.youtube.com/watch?v=Gmpdax6XG-o",
+  "w9d5": "https://www.youtube.com/watch?v=yu2tDbBvLJY",
+  "w9d6": "https://www.youtube.com/watch?v=59_s6OJqfV0",
+  "w9d7": "https://www.youtube.com/watch?v=-4w9xwLYTKQ",
+  "w10d1": "https://www.youtube.com/watch?v=qltFKZrU8GY",
+  "w10d2": "https://www.youtube.com/watch?v=Z2vHG10rcDc",
+  "w10d3": "https://www.youtube.com/watch?v=PtwFi8w-DeE",
+  "w10d4": "https://www.youtube.com/watch?v=Rzjr9xDde84",
+  "w10d5": "https://www.youtube.com/watch?v=xnbxrTGytGg",
+  "w10d6": "https://www.youtube.com/watch?v=OwAJ8WNrJnY",
+  "w10d7": "https://www.youtube.com/watch?v=aN58TNsE4uw",
+  "w15d1": "https://www.youtube.com/watch?v=pNgWGLOqlek",
+  "w15d2": "https://www.youtube.com/watch?v=qDM-v4ZD2RA",
+  "w15d3": "https://www.youtube.com/watch?v=S7vKVL3Abq8",
+  "w15d4": "https://www.youtube.com/watch?v=U-Jqfv-LvD8",
+  "w15d5": "https://www.youtube.com/watch?v=v8rDjE8iv90",
+  "w15d6": "https://www.youtube.com/watch?v=gbVINQ4CWF8",
+  "w15d7": "https://www.youtube.com/watch?v=pBgTIAWoeGA",
+  "w16d1": "https://www.youtube.com/watch?v=goqliUEhtT0",
+  "w16d2": "https://www.youtube.com/watch?v=8G3aXqaWHUQ",
+  "w16d3": "https://www.youtube.com/watch?v=bO9Fgn3gZNc",
+  "w16d4": "https://www.youtube.com/watch?v=aHYny8TQ9Tw",
+  "w16d5": "https://www.youtube.com/watch?v=4dAqv-cf8hI",
+  "w16d6": "https://www.youtube.com/watch?v=aXiuVitdFDw",
+  "w16d7": "https://www.youtube.com/watch?v=Tzz9e7Tcivc",
+  "w17d1": "https://www.youtube.com/watch?v=cgzf55o-cmM",
+  "w17d2": "https://www.youtube.com/watch?v=c2Yvln061Dg",
+  "w17d3": "https://www.youtube.com/watch?v=TXPMnBrtO2w",
+  "w17d4": "https://www.youtube.com/watch?v=ESmPEUyZ3nA",
+  "w17d5": "https://www.youtube.com/watch?v=Xb6EBJGC_V8",
+  "w17d6": "https://www.youtube.com/watch?v=cth4f1-TkN0",
+  "w17d7": "https://www.youtube.com/watch?v=H2B6PxwnmBY",
+  "w18d1": "https://www.youtube.com/watch?v=y1ta4DvMmBc",
+  "w18d2": "https://www.youtube.com/watch?v=l1xDqVbeeF4",
+  "w18d3": "https://www.youtube.com/watch?v=dD7ErWJpHdM",
+  "w18d4": "https://www.youtube.com/watch?v=yGQ8np51Zzw",
+  "w18d5": "https://www.youtube.com/watch?v=zPco19iDzBM",
+  "w18d6": "https://www.youtube.com/watch?v=NDZtqwxNnfE",
+  "w18d7": "https://www.youtube.com/watch?v=t2l7Qq0agEQ",
+  "w19d1": "https://www.youtube.com/watch?v=0ep4eUgS8wU",
+  "w19d2": "https://www.youtube.com/watch?v=tgYQ8--PZ6s",
+  "w19d3": "https://www.youtube.com/watch?v=s975UISM-R4",
+  "w19d4": "https://www.youtube.com/watch?v=TvBxOB7Plbk",
+  "w19d5": "https://www.youtube.com/watch?v=M6It8M5xeHk",
+  "w19d6": "https://www.youtube.com/watch?v=d83Oqx_R2W0",
+  "w19d7": "https://www.youtube.com/watch?v=4RdNs1d3Jrg",
+  "w20d1": "https://www.youtube.com/watch?v=nOUWUTzi-Z0",
+  "w20d2": "https://www.youtube.com/watch?v=dSblUCFs-F0",
+  "w20d3": "https://www.youtube.com/watch?v=CWXNoxEJV5A",
+  "w20d4": "https://www.youtube.com/watch?v=Tp3JMzRPHTM",
+  "w20d5": "https://www.youtube.com/watch?v=X9K_iYYz_q8",
+  "w20d6": "https://www.youtube.com/watch?v=dMFNT0-btL8",
+  "w20d7": "https://www.youtube.com/watch?v=8m3YDyJ_Bas",
+  "w21d1": "https://www.youtube.com/watch?v=OoY-t6BSn7A",
+  "w21d2": "https://www.youtube.com/watch?v=q4hVoH5Hg6o",
+  "w21d3": "https://www.youtube.com/watch?v=9ZYyicAh44I",
+  "w21d4": "https://www.youtube.com/watch?v=NI4STcaxFnM",
+  "w21d5": "https://www.youtube.com/watch?v=KRxQJqToges",
+  "w21d6": "https://www.youtube.com/watch?v=GOjbsUiENec",
+  "w21d7": "https://www.youtube.com/watch?v=osWUpz-Ypbg",
+  "w22d1": "https://www.youtube.com/watch?v=ePqOAzgnPYc",
+  "w22d2": "https://www.youtube.com/watch?v=4F_UFgz9fcI",
+  "w22d3": "https://www.youtube.com/watch?v=FNGYgX4WCZo",
+  "w22d4": "https://www.youtube.com/watch?v=IOExX68U6T8",
+  "w22d5": "https://www.youtube.com/watch?v=2U-tgLA12g8",
+  "w22d6": "https://www.youtube.com/watch?v=leeUUvIw4Tc",
+  "w22d7": "https://www.youtube.com/watch?v=fxJNX1QX7YM",
+  "w23d1": "https://www.youtube.com/watch?v=-z0W9QpNJ3U",
+  "w23d2": "https://www.youtube.com/watch?v=q48qOORGEBA",
+  "w23d3": "https://www.youtube.com/watch?v=qsS3EHqy958",
+  "w23d4": "https://www.youtube.com/watch?v=LnlMpenrmsc",
+  "w23d5": "https://www.youtube.com/watch?v=Qzbh8XvWXIc",
+  "w23d6": "https://www.youtube.com/watch?v=L3hf1qK77ks",
+  "w23d7": "https://www.youtube.com/watch?v=qr0ejCqg6kI",
+  "w24d1": "https://www.youtube.com/watch?v=C7pHfI2V6OM",
+  "w24d2": "https://www.youtube.com/watch?v=3OlzsiCrnk0",
+  "w24d3": "https://www.youtube.com/watch?v=aPXaZeFASMo",
+  "w24d4": "https://www.youtube.com/watch?v=_ytvhXxbbLg",
+  "w24d5": "https://www.youtube.com/watch?v=UmLVcDxKkJ4",
+  "w24d6": "https://www.youtube.com/watch?v=1qQbtTxht9k",
+  "w24d7": "https://www.youtube.com/watch?v=W2r_3NbctZM",
+  "w25d1": "https://www.youtube.com/watch?v=tTI2yzptTgA",
+  "w25d2": "https://www.youtube.com/watch?v=IiqzFl0k4ns",
+  "w25d3": "https://www.youtube.com/watch?v=N_dU7Vd9noM",
+  "w25d4": "https://www.youtube.com/watch?v=aAzY3aORzDc",
+  "w25d5": "https://www.youtube.com/watch?v=FbWLTif2xDc",
+  "w25d6": "https://www.youtube.com/watch?v=O0GGie1cVyQ",
+  "w25d7": "https://www.youtube.com/watch?v=l8P3o-2ZvzM",
+  "w26d1": "https://www.youtube.com/watch?v=_P6SKmEThPQ",
+  "w26d2": "https://www.youtube.com/watch?v=0MroTlq6ZkQ",
+  "w26d3": "https://www.youtube.com/watch?v=_wLwRb6xCBo",
+  "w26d4": "https://www.youtube.com/watch?v=UJl8yHYQG_k",
+  "w26d5": "https://www.youtube.com/watch?v=YvXHCQhYWwE",
+  "w26d6": "https://www.youtube.com/watch?v=E1z_XJl8Ybg",
+  "w26d7": "https://www.youtube.com/watch?v=cAvUhbvaXAU",
+  "w27d1": "https://www.youtube.com/watch?v=Lc0Up9c1w4Y",
+  "w27d2": "https://www.youtube.com/watch?v=EPrLZChsKBM",
+  "w27d3": "https://www.youtube.com/watch?v=6MOgN-g9r5A",
+  "w27d4": "https://www.youtube.com/watch?v=ArbxTcTBBwg",
+  "w27d5": "https://www.youtube.com/watch?v=ECAnhtxboiM",
+  "w27d6": "https://www.youtube.com/watch?v=eJ1_-Tfxrjw",
+  "w27d7": "https://www.youtube.com/watch?v=deGfwpTytvo",
+  "w28d1": "https://www.youtube.com/watch?v=EwTfXZnbnmk",
+  "w28d2": "https://www.youtube.com/watch?v=GXP5wVn_VLs",
+  "w28d3": "https://www.youtube.com/watch?v=rpgeOJ3Apwg",
+  "w28d4": "https://www.youtube.com/watch?v=iQsEbrdIKnI",
+  "w28d5": "https://www.youtube.com/watch?v=X2K3-QPq-k4",
+  "w28d6": "https://www.youtube.com/watch?v=uG4HrHgY6bc",
+  "w28d7": "https://www.youtube.com/watch?v=TsvijmoIYEU",
+  "w29d1": "https://www.youtube.com/watch?v=i3KomMZfwPY",
+  "w29d2": "https://www.youtube.com/watch?v=D-cmrd2E0AY",
+  "w29d3": "https://www.youtube.com/watch?v=-G-i0VHxcxI",
+  "w29d4": "https://www.youtube.com/watch?v=TBXLf60WivE",
+  "w29d5": "https://www.youtube.com/watch?v=3zXCsxjn5L4",
+  "w29d6": "https://www.youtube.com/watch?v=3X8wBDEUdh8",
+  "w29d7": "https://www.youtube.com/watch?v=pc2iwLa4VSU",
+  "w30d1": "https://www.youtube.com/watch?v=zyMOvxBMMjA",
+  "w30d2": "https://www.youtube.com/watch?v=39s757ao23U",
+  "w30d3": "https://www.youtube.com/watch?v=4FlVe6298GA",
+  "w30d4": "https://www.youtube.com/watch?v=NiZcWbeMtUE",
+  "w30d5": "https://www.youtube.com/watch?v=5ZJKTwfI1U4",
+  "w30d6": "https://www.youtube.com/watch?v=TQCJbnglPOc",
+  "w30d7": "https://www.youtube.com/watch?v=GdVZBFAGgik",
+  "w31d1": "https://www.youtube.com/watch?v=PcbpVerpIrg",
+  "w31d2": "https://www.youtube.com/watch?v=apdOW0NlPp0",
+  "w31d3": "https://www.youtube.com/watch?v=UwBWoiXaSmE",
+  "w31d4": "https://www.youtube.com/watch?v=pc6T7gQYDps",
+  "w31d5": "https://www.youtube.com/watch?v=8Pqjrp-zVpY",
+  "w31d6": "https://www.youtube.com/watch?v=Iz8sAKi63gQ",
+  "w31d7": "https://www.youtube.com/watch?v=s_drUBY7lzs",
+  "w32d1": "https://www.youtube.com/watch?v=BHHgsZCWQ14",
+  "w32d2": "https://www.youtube.com/watch?v=SdquVWN55Do",
+  "w32d3": "https://www.youtube.com/watch?v=TSNi_sXbM28",
+  "w32d4": "https://www.youtube.com/watch?v=utstbX5l9pc",
+  "w32d5": "https://www.youtube.com/watch?v=BApAhL8ld1c",
+  "w32d6": "https://www.youtube.com/watch?v=MDOpoORaEdg",
+  "w32d7": "https://www.youtube.com/watch?v=QKekl7bVHcY",
+  "w33d1": "https://www.youtube.com/watch?v=F6AXXaEYsBI",
+  "w33d2": "https://www.youtube.com/watch?v=KxWd8JAKji8",
+  "w33d3": "https://www.youtube.com/watch?v=niD_I0SL3kY",
+  "w33d4": "https://www.youtube.com/watch?v=Y-vGJ_17V2Q",
+  "w33d5": "https://www.youtube.com/watch?v=LixUbKHyKwA",
+  "w33d6": "https://www.youtube.com/watch?v=emcR2fwF1PQ",
+  "w33d7": "https://www.youtube.com/watch?v=3orC58iUdfk",
+  "w34d1": "https://www.youtube.com/watch?v=VijMqF6LhdY",
+  "w34d2": "https://www.youtube.com/watch?v=JmDdXEhZKN0",
+  "w34d3": "https://www.youtube.com/watch?v=hi4UxlyN5Yc",
+  "w34d4": "https://www.youtube.com/watch?v=jyzYNeccLF0",
+  "w34d5": "https://www.youtube.com/watch?v=8_DVu_ExUTU",
+  "w34d6": "https://www.youtube.com/watch?v=gwhO1sPwTvc",
+  "w34d7": "https://www.youtube.com/watch?v=kz3XyOJ-Fl8",
+  "w35d1": "https://www.youtube.com/watch?v=q3GljUWfayA",
+  "w35d2": "https://www.youtube.com/watch?v=VKnnNwZrld4",
+  "w35d3": "https://www.youtube.com/watch?v=fKqVEC0dgAw",
+  "w35d4": "https://www.youtube.com/watch?v=C4_TSw_fW9M",
+  "w35d5": "https://www.youtube.com/watch?v=iSde4wdnPG4",
+  "w35d6": "https://www.youtube.com/watch?v=tHmTAnZXbjY"
+};
+
+const ADMIN_PASSWORD_HASH = "b5b02791f0c30b7cb75416437717537e78cebb83c186c08d743f0021ca5ee085";
+const LEGACY_YT_STORAGE_KEY = "spiritualExercisesYouTubeLinksV1";
+const EDIT_STORAGE_KEY = "spiritualExercisesDayEditsV2";
+let adminMode = false;
+
+function dayKey(week, day) {
+  return `w${week}d${day}`;
+}
+
+function findDay(week, day) {
+  const w = weeksData.find(x => x.week === Number(week));
+  return w ? w.days.find(x => x.day === Number(day)) : null;
+}
+
+function applyLegacyYouTubeLinks(linkMap) {
+  Object.entries(linkMap || {}).forEach(([key, url]) => {
+    const m = key.match(/^w(\d+)d(\d+)$/);
+    if (!m) return;
+    const d = findDay(m[1], m[2]);
+    if (d && url) d.youtube = url;
+  });
+}
+
+function applyDayEdits(editMap) {
+  Object.entries(editMap || {}).forEach(([key, edit]) => {
+    const m = key.match(/^w(\d+)d(\d+)$/);
+    if (!m || !edit || typeof edit !== 'object') return;
+    const d = findDay(m[1], m[2]);
+    if (!d) return;
+    ['title','source','description','youtube'].forEach(field => {
+      if (Object.prototype.hasOwnProperty.call(edit, field)) d[field] = String(edit[field] ?? '');
+    });
+  });
+}
+
+function loadSavedEdits() {
+  // Backward compatibility with YouTube links entered in v7.
+  try {
+    const legacy = JSON.parse(localStorage.getItem(LEGACY_YT_STORAGE_KEY) || "{}");
+    applyLegacyYouTubeLinks(legacy);
+  } catch (e) {}
+
+  // Full Admin edits from v8 onward override embedded/default values.
+  try {
+    const saved = JSON.parse(localStorage.getItem(EDIT_STORAGE_KEY) || "{}");
+    applyDayEdits(saved);
+  } catch (e) {}
+}
+
+function collectDayEdits() {
+  const out = {};
+  weeksData.forEach(w => w.days.forEach(d => {
+    out[dayKey(w.week, d.day)] = {
+      title: String(d.title || '').trim(),
+      source: String(d.source || '').trim(),
+      description: String(d.description || '').trim(),
+      youtube: String(d.youtube || '').trim()
+    };
+  }));
+  return out;
+}
+
+function isYouTubeUrl(url) {
+  if (!url) return true;
+  try {
+    const u = new URL(url);
+    return ["youtube.com","www.youtube.com","m.youtube.com","youtu.be"].includes(u.hostname);
+  } catch (e) {
+    return false;
+  }
+}
+
+async function sha256Hex(value) {
+  const data = new TextEncoder().encode(value);
+  const hash = await crypto.subtle.digest("SHA-256", data);
+  return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2,"0")).join("");
+}
+
+const weeksEl = document.getElementById('weeks');
+const searchEl = document.getElementById('search');
+const filterEl = document.getElementById('weekFilter');
+
+filterEl.value = '';
+
+weeksData.forEach(w => {
+  const option = document.createElement('option');
+  option.value = String(w.week);
+  option.textContent = `Week ${w.week}`;
+  filterEl.appendChild(option);
+});
+
+function esc(s='') {
+  return String(s).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+}
+
+function normalizeSearchText(value='') {
+  return String(value)
+    .toLowerCase()
+    .replace(/[　\s_-]+/g, '')
+    .replace(/第(\d+)週/g, 'week$1')
+    .replace(/(\d+)週/g, 'week$1');
+}
+
+function render() {
+  const rawQuery = searchEl.value.trim();
+  const q = normalizeSearchText(rawQuery);
+  const selectedWeek = filterEl.value;
+  weeksEl.innerHTML = '';
+
+  weeksData.forEach(w => {
+    // When there is a text search, search all weeks instead of letting
+    // a previously selected week accidentally block the result.
+    if (!q && selectedWeek && String(w.week) !== selectedWeek) return;
+
+    const matchedDays = w.days.filter(d => {
+      const hay = normalizeSearchText([
+        w.week,
+        `week ${w.week}`,
+        `week${w.week}`,
+        `w${w.week}`,
+        `${w.week}週`,
+        `第${w.week}週`,
+        w.summary,
+        d.day,
+        `day ${d.day}`,
+        `day${d.day}`,
+        `d${d.day}`,
+        d.title,
+        d.description,
+        d.source
+      ].join(' '));
+      return !q || hay.includes(q);
+    });
+    if (!matchedDays.length) return;
+
+    const details = document.createElement('details');
+    details.className = 'week';
+    details.open = !!q || !!selectedWeek || w.week === 35;
+
+    const rows = matchedDays.map(d => {
+      const title = adminMode
+        ? `<input class="admin-field title-input" data-field="title" data-week="${w.week}" data-day="${d.day}" value="${esc(d.title || '')}" placeholder="每日標題">`
+        : (d.title ? esc(d.title) : '<span class="pending">資料待補</span>');
+      const description = adminMode
+        ? `<textarea class="admin-field desc-input" data-field="description" data-week="${w.week}" data-day="${d.day}" rows="2" placeholder="簡短說明">${esc(d.description || '')}</textarea>`
+        : (d.description ? esc(d.description) : '');
+      const source = adminMode
+        ? `<textarea class="admin-field source-input" data-field="source" data-week="${w.week}" data-day="${d.day}" rows="2" placeholder="經文／《神操》來源">${esc(d.source || '')}</textarea>`
+        : (d.source ? esc(d.source) : '');
+      const yt = adminMode
+        ? `<input class="yt-input" data-field="youtube" data-week="${w.week}" data-day="${d.day}" value="${esc(d.youtube || '')}" placeholder="https://youtu.be/..." aria-label="Week ${w.week} Day ${d.day} YouTube URL">`
+        : (d.youtube
+            ? `<a class="youtube" href="${esc(d.youtube)}" target="_blank" rel="noopener">▶ YouTube</a>`
+            : '');
+      return `
+        <tr>
+          <td class="day" data-label="Day">Day ${d.day}</td>
+          <td class="title" data-label="每日標題">${title}</td>
+          <td class="desc" data-label="簡短說明">${description}</td>
+          <td class="source" data-label="經文／《神操》來源">${source}</td>
+          <td class="yt" data-label="YouTube">${yt}</td>
+        </tr>`;
+    }).join('');
+
+    details.innerHTML = `
+      <summary>
+        <div class="week-left">
+          <div class="week-no">Week ${w.week}</div>
+          <div>
+            <div class="week-title">${esc(w.summary)}</div>
+            <div class="week-meta">本週主題摘要 · ${w.days.length} 天</div>
+          </div>
+        </div>
+        <div class="chev">⌄</div>
+      </summary>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Day</th><th>每日標題</th><th>簡短說明<br><span style="font-weight:400;opacity:.75">Brief Description</span></th><th>經文／《神操》來源</th><th>YouTube</th></tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>`;
+    weeksEl.appendChild(details);
+  });
+}
+
+searchEl.addEventListener('input', () => {
+  if (searchEl.value.trim()) {
+    filterEl.value = '';
+  }
+  render();
+});
+filterEl.addEventListener('change', () => {
+  if (filterEl.value) {
+    searchEl.value = '';
+  }
+  render();
+});
+document.getElementById('openAll').addEventListener('click', () => document.querySelectorAll('details.week').forEach(x => x.open = true));
+document.getElementById('closeAll').addEventListener('click', () => document.querySelectorAll('details.week').forEach(x => x.open = false));
+
+
+const seriesDialog = document.getElementById('seriesDialog');
+const seriesBtn = document.getElementById('seriesBtn');
+const seriesClose = document.getElementById('seriesClose');
+seriesBtn.addEventListener('click', () => seriesDialog.showModal());
+seriesClose.addEventListener('click', () => seriesDialog.close());
+seriesDialog.addEventListener('click', (e) => {
+  if (e.target === seriesDialog) seriesDialog.close();
+});
+
+
+const adminDialog = document.getElementById('adminDialog');
+const adminBtn = document.getElementById('adminBtn');
+const adminPassword = document.getElementById('adminPassword');
+const adminError = document.getElementById('adminError');
+const adminBar = document.getElementById('adminBar');
+
+adminBtn.addEventListener('click', () => {
+  adminPassword.value = '';
+  adminError.textContent = '';
+  adminDialog.showModal();
+  setTimeout(() => adminPassword.focus(), 50);
+});
+
+document.getElementById('adminCancel').addEventListener('click', () => adminDialog.close());
+
+async function unlockAdmin() {
+  const enteredHash = await sha256Hex(adminPassword.value);
+  if (enteredHash !== ADMIN_PASSWORD_HASH) {
+    adminError.textContent = '密碼不正確。';
+    return;
+  }
+  adminMode = true;
+  adminDialog.close();
+  adminBar.hidden = false;
+  render();
+}
+
+document.getElementById('adminUnlock').addEventListener('click', unlockAdmin);
+adminPassword.addEventListener('keydown', e => {
+  if (e.key === 'Enter') unlockAdmin();
+});
+
+weeksEl.addEventListener('input', e => {
+  const el = e.target.closest('[data-field]');
+  if (!el) return;
+  const d = findDay(el.dataset.week, el.dataset.day);
+  if (!d) return;
+  const field = el.dataset.field;
+  if (!['title','source','description','youtube'].includes(field)) return;
+  d[field] = el.value;
+  if (field === 'youtube') {
+    el.classList.toggle('invalid', !isYouTubeUrl(d.youtube.trim()));
+  }
+});
+
+document.getElementById('saveLinks').addEventListener('click', () => {
+  const bad = Array.from(document.querySelectorAll('.yt-input')).filter(x => !isYouTubeUrl(x.value.trim()));
+  if (bad.length) {
+    bad.forEach(x => x.classList.add('invalid'));
+    alert('有 YouTube 網址格式不正確，請先修正紅色欄位。');
+    return;
+  }
+  localStorage.setItem(EDIT_STORAGE_KEY, JSON.stringify(collectDayEdits()));
+  // Also retain YouTube links in the legacy key for backward compatibility.
+  const ytOnly = {};
+  weeksData.forEach(w => w.days.forEach(d => {
+    if ((d.youtube || '').trim()) ytOnly[dayKey(w.week, d.day)] = d.youtube.trim();
+  }));
+  localStorage.setItem(LEGACY_YT_STORAGE_KEY, JSON.stringify(ytOnly));
+  alert('每日標題、來源、簡短說明與 YouTube 網址已儲存在這台裝置的瀏覽器。要發布到網站，請再按「Download Updated index.html」。');
+});
+
+document.getElementById('exitAdmin').addEventListener('click', () => {
+  adminMode = false;
+  adminBar.hidden = true;
+  render();
+});
+
+document.getElementById('downloadHtml').addEventListener('click', () => {
+  const bad = Array.from(document.querySelectorAll('.yt-input')).filter(x => !isYouTubeUrl(x.value.trim()));
+  if (bad.length) {
+    bad.forEach(x => x.classList.add('invalid'));
+    alert('有 YouTube 網址格式不正確，請先修正紅色欄位。');
+    return;
+  }
+
+  localStorage.setItem(EDIT_STORAGE_KEY, JSON.stringify(collectDayEdits()));
+
+  const clone = document.documentElement.cloneNode(true);
+  const bar = clone.querySelector('#adminBar');
+  if (bar) { bar.hidden = true; bar.removeAttribute('style'); }
+  clone.querySelectorAll('dialog[open]').forEach(d => d.removeAttribute('open'));
+
+  const weeksContainer = clone.querySelector('#weeks');
+  if (weeksContainer) weeksContainer.innerHTML = '';
+  const weekFilter = clone.querySelector('#weekFilter');
+  if (weekFilter) weekFilter.innerHTML = '<option value="">全部週次</option>';
+  const searchBox = clone.querySelector('#search');
+  if (searchBox) searchBox.value = '';
+
+  let html = '<!DOCTYPE html>\n' + clone.outerHTML;
+
+  // Permanently embed all Admin edits into the downloaded HTML.
+  const dataText = JSON.stringify(weeksData, null, 2).replace(/</g, '\\u003c');
+  html = html.replace(
+    /const weeksData = \[[\s\S]*?\n\];\n\n\nconst DEFAULT_YOUTUBE_LINKS/,
+    'const weeksData = ' + dataText + ';\n\n\nconst DEFAULT_YOUTUBE_LINKS'
+  );
+
+  const blob = new Blob([html], {type:'text/html;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'index.html';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+});
+
+adminBar.hidden = true;
+loadSavedEdits();
+
+render();
+</script>
+
+
+</body></html>
